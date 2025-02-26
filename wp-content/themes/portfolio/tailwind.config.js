@@ -49,6 +49,7 @@ module.exports = {
             },
             spacing: {
                 4.5: '1.125rem', // 18px
+                5.5: '1.375rem', // 22px
                 18: '4.5rem', // 72px
             },
             letterSpacing: {
@@ -70,7 +71,8 @@ module.exports = {
                 pink: {
                     theme: {
                         DEFAULT: '#F7C3B8',
-                        dark: '#F99E8B',
+                        // dark: '#F99E8B',
+                        dark: '#F4A99A',
                         light: '#FBDDD7',
                         lightest: '#FDEEEB',
                     }

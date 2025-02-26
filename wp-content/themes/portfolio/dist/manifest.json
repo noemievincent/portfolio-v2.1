@@ -1,14 +1,226 @@
 {
+  "assets/fonts/Fira/Mono/FiraMono-Bold.woff": {
+    "file": "assets/FiraMono-Bold-d2081983.woff",
+    "src": "assets/fonts/Fira/Mono/FiraMono-Bold.woff"
+  },
+  "assets/fonts/Fira/Mono/FiraMono-Bold.woff2": {
+    "file": "assets/FiraMono-Bold-36716412.woff2",
+    "src": "assets/fonts/Fira/Mono/FiraMono-Bold.woff2"
+  },
+  "assets/fonts/Fira/Mono/FiraMono-Medium.woff": {
+    "file": "assets/FiraMono-Medium-27fce2c7.woff",
+    "src": "assets/fonts/Fira/Mono/FiraMono-Medium.woff"
+  },
+  "assets/fonts/Fira/Mono/FiraMono-Medium.woff2": {
+    "file": "assets/FiraMono-Medium-44bff7fd.woff2",
+    "src": "assets/fonts/Fira/Mono/FiraMono-Medium.woff2"
+  },
+  "assets/fonts/Fira/Mono/FiraMono-Regular.woff": {
+    "file": "assets/FiraMono-Regular-b80924da.woff",
+    "src": "assets/fonts/Fira/Mono/FiraMono-Regular.woff"
+  },
+  "assets/fonts/Fira/Mono/FiraMono-Regular.woff2": {
+    "file": "assets/FiraMono-Regular-f4ecbcad.woff2",
+    "src": "assets/fonts/Fira/Mono/FiraMono-Regular.woff2"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-Black.woff": {
+    "file": "assets/FiraSans-Black-89a6255e.woff",
+    "src": "assets/fonts/Fira/Sans/FiraSans-Black.woff"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-Black.woff2": {
+    "file": "assets/FiraSans-Black-642c8e8c.woff2",
+    "src": "assets/fonts/Fira/Sans/FiraSans-Black.woff2"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-BlackItalic.woff": {
+    "file": "assets/FiraSans-BlackItalic-5c6f7fb3.woff",
+    "src": "assets/fonts/Fira/Sans/FiraSans-BlackItalic.woff"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-BlackItalic.woff2": {
+    "file": "assets/FiraSans-BlackItalic-95e6ec6a.woff2",
+    "src": "assets/fonts/Fira/Sans/FiraSans-BlackItalic.woff2"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-Bold.woff": {
+    "file": "assets/FiraSans-Bold-62dcbfac.woff",
+    "src": "assets/fonts/Fira/Sans/FiraSans-Bold.woff"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-Bold.woff2": {
+    "file": "assets/FiraSans-Bold-cc3dd352.woff2",
+    "src": "assets/fonts/Fira/Sans/FiraSans-Bold.woff2"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-BoldItalic.woff": {
+    "file": "assets/FiraSans-BoldItalic-5359859e.woff",
+    "src": "assets/fonts/Fira/Sans/FiraSans-BoldItalic.woff"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-BoldItalic.woff2": {
+    "file": "assets/FiraSans-BoldItalic-3ae773df.woff2",
+    "src": "assets/fonts/Fira/Sans/FiraSans-BoldItalic.woff2"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-ExtraBold.woff": {
+    "file": "assets/FiraSans-ExtraBold-ceab66cd.woff",
+    "src": "assets/fonts/Fira/Sans/FiraSans-ExtraBold.woff"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-ExtraBold.woff2": {
+    "file": "assets/FiraSans-ExtraBold-212c4824.woff2",
+    "src": "assets/fonts/Fira/Sans/FiraSans-ExtraBold.woff2"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-ExtraBoldItalic.woff": {
+    "file": "assets/FiraSans-ExtraBoldItalic-6d4b6c73.woff",
+    "src": "assets/fonts/Fira/Sans/FiraSans-ExtraBoldItalic.woff"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-ExtraBoldItalic.woff2": {
+    "file": "assets/FiraSans-ExtraBoldItalic-21aac4ba.woff2",
+    "src": "assets/fonts/Fira/Sans/FiraSans-ExtraBoldItalic.woff2"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-ExtraLight.woff": {
+    "file": "assets/FiraSans-ExtraLight-e4ae47b9.woff",
+    "src": "assets/fonts/Fira/Sans/FiraSans-ExtraLight.woff"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-ExtraLight.woff2": {
+    "file": "assets/FiraSans-ExtraLight-5e22c1ba.woff2",
+    "src": "assets/fonts/Fira/Sans/FiraSans-ExtraLight.woff2"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-ExtraLightItalic.woff": {
+    "file": "assets/FiraSans-ExtraLightItalic-66478229.woff",
+    "src": "assets/fonts/Fira/Sans/FiraSans-ExtraLightItalic.woff"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-ExtraLightItalic.woff2": {
+    "file": "assets/FiraSans-ExtraLightItalic-c4636213.woff2",
+    "src": "assets/fonts/Fira/Sans/FiraSans-ExtraLightItalic.woff2"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-Italic.woff": {
+    "file": "assets/FiraSans-Italic-c8cfb508.woff",
+    "src": "assets/fonts/Fira/Sans/FiraSans-Italic.woff"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-Italic.woff2": {
+    "file": "assets/FiraSans-Italic-69b4cbd4.woff2",
+    "src": "assets/fonts/Fira/Sans/FiraSans-Italic.woff2"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-Light.woff": {
+    "file": "assets/FiraSans-Light-0bf97838.woff",
+    "src": "assets/fonts/Fira/Sans/FiraSans-Light.woff"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-Light.woff2": {
+    "file": "assets/FiraSans-Light-f518ee89.woff2",
+    "src": "assets/fonts/Fira/Sans/FiraSans-Light.woff2"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-LightItalic.woff": {
+    "file": "assets/FiraSans-LightItalic-a91fa23a.woff",
+    "src": "assets/fonts/Fira/Sans/FiraSans-LightItalic.woff"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-LightItalic.woff2": {
+    "file": "assets/FiraSans-LightItalic-243d1e34.woff2",
+    "src": "assets/fonts/Fira/Sans/FiraSans-LightItalic.woff2"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-Medium.woff": {
+    "file": "assets/FiraSans-Medium-06a7771f.woff",
+    "src": "assets/fonts/Fira/Sans/FiraSans-Medium.woff"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-Medium.woff2": {
+    "file": "assets/FiraSans-Medium-686ea467.woff2",
+    "src": "assets/fonts/Fira/Sans/FiraSans-Medium.woff2"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-MediumItalic.woff": {
+    "file": "assets/FiraSans-MediumItalic-cb453e56.woff",
+    "src": "assets/fonts/Fira/Sans/FiraSans-MediumItalic.woff"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-MediumItalic.woff2": {
+    "file": "assets/FiraSans-MediumItalic-3eb96a2d.woff2",
+    "src": "assets/fonts/Fira/Sans/FiraSans-MediumItalic.woff2"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-Regular.woff": {
+    "file": "assets/FiraSans-Regular-f107ec74.woff",
+    "src": "assets/fonts/Fira/Sans/FiraSans-Regular.woff"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-Regular.woff2": {
+    "file": "assets/FiraSans-Regular-8a6d8612.woff2",
+    "src": "assets/fonts/Fira/Sans/FiraSans-Regular.woff2"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-SemiBold.woff": {
+    "file": "assets/FiraSans-SemiBold-e30bdabf.woff",
+    "src": "assets/fonts/Fira/Sans/FiraSans-SemiBold.woff"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-SemiBold.woff2": {
+    "file": "assets/FiraSans-SemiBold-c30653a4.woff2",
+    "src": "assets/fonts/Fira/Sans/FiraSans-SemiBold.woff2"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-SemiBoldItalic.woff": {
+    "file": "assets/FiraSans-SemiBoldItalic-afbc728c.woff",
+    "src": "assets/fonts/Fira/Sans/FiraSans-SemiBoldItalic.woff"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-SemiBoldItalic.woff2": {
+    "file": "assets/FiraSans-SemiBoldItalic-376de53d.woff2",
+    "src": "assets/fonts/Fira/Sans/FiraSans-SemiBoldItalic.woff2"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-Thin.woff": {
+    "file": "assets/FiraSans-Thin-2a7f83b9.woff",
+    "src": "assets/fonts/Fira/Sans/FiraSans-Thin.woff"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-Thin.woff2": {
+    "file": "assets/FiraSans-Thin-0916e002.woff2",
+    "src": "assets/fonts/Fira/Sans/FiraSans-Thin.woff2"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-ThinItalic.woff": {
+    "file": "assets/FiraSans-ThinItalic-afc86179.woff",
+    "src": "assets/fonts/Fira/Sans/FiraSans-ThinItalic.woff"
+  },
+  "assets/fonts/Fira/Sans/FiraSans-ThinItalic.woff2": {
+    "file": "assets/FiraSans-ThinItalic-8cf74318.woff2",
+    "src": "assets/fonts/Fira/Sans/FiraSans-ThinItalic.woff2"
+  },
   "main.css": {
-    "file": "assets/main-e55fe68c.css",
+    "file": "assets/main-b4aeba86.css",
     "src": "main.css"
   },
   "main.js": {
-    "file": "assets/main-bdcf250a.js",
-    "src": "main.js",
-    "isEntry": true,
+    "assets": [
+      "assets/FiraMono-Medium-44bff7fd.woff2",
+      "assets/FiraMono-Medium-27fce2c7.woff",
+      "assets/FiraMono-Regular-f4ecbcad.woff2",
+      "assets/FiraMono-Regular-b80924da.woff",
+      "assets/FiraMono-Bold-36716412.woff2",
+      "assets/FiraMono-Bold-d2081983.woff",
+      "assets/FiraSans-BlackItalic-95e6ec6a.woff2",
+      "assets/FiraSans-BlackItalic-5c6f7fb3.woff",
+      "assets/FiraSans-Black-642c8e8c.woff2",
+      "assets/FiraSans-Black-89a6255e.woff",
+      "assets/FiraSans-Bold-cc3dd352.woff2",
+      "assets/FiraSans-Bold-62dcbfac.woff",
+      "assets/FiraSans-ExtraLight-5e22c1ba.woff2",
+      "assets/FiraSans-ExtraLight-e4ae47b9.woff",
+      "assets/FiraSans-ExtraBold-212c4824.woff2",
+      "assets/FiraSans-ExtraBold-ceab66cd.woff",
+      "assets/FiraSans-ExtraBoldItalic-21aac4ba.woff2",
+      "assets/FiraSans-ExtraBoldItalic-6d4b6c73.woff",
+      "assets/FiraSans-ExtraLightItalic-c4636213.woff2",
+      "assets/FiraSans-ExtraLightItalic-66478229.woff",
+      "assets/FiraSans-BoldItalic-3ae773df.woff2",
+      "assets/FiraSans-BoldItalic-5359859e.woff",
+      "assets/FiraSans-MediumItalic-3eb96a2d.woff2",
+      "assets/FiraSans-MediumItalic-cb453e56.woff",
+      "assets/FiraSans-LightItalic-243d1e34.woff2",
+      "assets/FiraSans-LightItalic-a91fa23a.woff",
+      "assets/FiraSans-SemiBoldItalic-376de53d.woff2",
+      "assets/FiraSans-SemiBoldItalic-afbc728c.woff",
+      "assets/FiraSans-Light-f518ee89.woff2",
+      "assets/FiraSans-Light-0bf97838.woff",
+      "assets/FiraSans-Italic-69b4cbd4.woff2",
+      "assets/FiraSans-Italic-c8cfb508.woff",
+      "assets/FiraSans-Medium-686ea467.woff2",
+      "assets/FiraSans-Medium-06a7771f.woff",
+      "assets/FiraSans-Regular-8a6d8612.woff2",
+      "assets/FiraSans-Regular-f107ec74.woff",
+      "assets/FiraSans-SemiBold-c30653a4.woff2",
+      "assets/FiraSans-SemiBold-e30bdabf.woff",
+      "assets/FiraSans-Thin-0916e002.woff2",
+      "assets/FiraSans-Thin-2a7f83b9.woff",
+      "assets/FiraSans-ThinItalic-8cf74318.woff2",
+      "assets/FiraSans-ThinItalic-afc86179.woff"
+    ],
     "css": [
-      "assets/main-e55fe68c.css"
-    ]
+      "assets/main-b4aeba86.css"
+    ],
+    "file": "assets/main-e9a18a22.js",
+    "isEntry": true,
+    "src": "main.js"
   }
 }

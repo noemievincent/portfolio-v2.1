@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Portfolio\n"
-"POT-Creation-Date: 2025-02-26 15:01+0100\n"
-"PO-Revision-Date: 2025-02-26 15:01+0100\n"
+"POT-Creation-Date: 2025-02-26 15:16+0100\n"
+"PO-Revision-Date: 2025-02-26 15:16+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -118,3 +118,6 @@ msgstr "Rechercher parmi les termes"
 #: inc/cpts.php:84
 msgid "Termes les plus utilisés"
 msgstr "Termes les plus utilisés"
+
+#~ msgid "Bonjour je teste"
+#~ msgstr "Bonjour je teste"

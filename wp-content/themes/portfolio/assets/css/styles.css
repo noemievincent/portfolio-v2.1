@@ -8,8 +8,10 @@
 @import './custom-utilities.css';
 
 @import 'scss/fonts.scss';
+@import 'scss/lang-switcher.scss';
+@import 'scss/menu.scss';
 
 /* admin bar fix */
 body.admin-bar {
-	max-height: calc(100vh - 32px);
+    max-height: calc(100vh - 32px);
 }

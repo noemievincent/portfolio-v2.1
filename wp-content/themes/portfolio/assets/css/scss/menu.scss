@@ -1,0 +1,96 @@
+header {
+  &.scrolled {
+    #sub-header {
+      @apply py-1 rg:py-1.5
+    }
+
+    #main-header {
+      @apply py-4 rg:py-7;
+    }
+  }
+
+  &.menu-opened {
+    #main-header {
+      .header-mobile {
+        @apply max-rg:translate-y-0;
+      }
+    }
+  }
+
+  #main-header {
+    .header-mobile {
+      @apply max-rg:-translate-y-[200vh] max-rg:duration-700 max-rg:transition-all max-rg:ease-in-out max-rg:fixed max-rg:z-10 max-rg:h-screen max-rg:overflow-auto max-rg:inset-x-0 max-rg:top-0 ;
+    }
+
+    .burger-menu {
+      .lines {
+        @apply flex flex-col items-end justify-between h-full w-full;
+
+        > span {
+          @apply block w-full h-0.5 ease-all;
+        }
+      }
+
+      &:hover, &:focus {
+        .lines {
+          > span {
+            @apply bg-theme-dark;
+          }
+        }
+      }
+
+      &.close {
+        .lines {
+          .line-1 {
+            @apply m-0 -rotate-45;
+            width: 80%;
+          }
+
+          .line-2 {
+            @apply scale-x-0;
+          }
+
+          .line-3 {
+            @apply m-0 rotate-45;
+            width: 80%;
+          }
+        }
+      }
+    }
+
+    .header-menu {
+      @apply flex max-rg:flex-col items-center justify-center gap-10 rg:gap-12 max-rg:text-2xl;
+
+      .menu-item {
+        @apply relative flex items-center justify-center;
+
+        a {
+          @apply relative z-1 ease-all;
+
+          &::after {
+            @apply content-[''] inline-block h-full aspect-square rounded-full bg-theme-light absolute -z-1 top-0 -left-4 opacity-0 scale-0 ease-all;
+          }
+        }
+
+        &:hover, &:focus, &.current-section-item {
+          a {
+            @apply !text-black after:opacity-100 after:scale-75 rg:after:scale-90;
+          }
+        }
+      }
+    }
+
+    .color-button {
+      @apply cursor-pointer h-8 w-8 rounded-full border-4 relative ease-all;
+
+      .inner-circle {
+        @apply content-[''] block h-full w-full absolute inset-0 rounded-full border-4 border-white opacity-0 ease-all;
+      }
+
+      &:hover .inner-circle,
+      &.active .inner-circle {
+        @apply opacity-100;
+      }
+    }
+  }
+}

@@ -13,10 +13,13 @@ define('IS_VITE_DEVELOPMENT', true);
 include "inc/inc.vite.php";
 include "inc/cpts.php";
 
+include "custom/functions/custom_language_switcher.php";
+
 add_action('after_setup_theme', 'nv_setup');
 
 function nv_setup()
 {
+    load_theme_textdomain('nv_core', get_template_directory() . '/languages');
 
     add_theme_support('menus');
     add_theme_support('title-tag');
@@ -46,3 +49,21 @@ function create_acf_options_page()
         ]);
     }
 }
+
+add_filter('wp_nav_menu_objects', 'add_current_language_to_menu_items', 10, 2);
+function add_current_language_to_menu_items($items, $args)
+{
+    if ($args->theme_location == 'header') {
+        foreach ($items as $item) {
+            if ($item->object == 'custom') {
+                $url = $item->url;
+                $language_slug = pll_current_language();
+                $new_url = '/' . $language_slug . $url;
+                $item->url = $new_url;
+            }
+        }
+    }
+
+    return $items;
+}
+
