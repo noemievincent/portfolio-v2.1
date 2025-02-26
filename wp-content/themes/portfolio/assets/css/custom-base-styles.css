@@ -3,16 +3,11 @@ html {
 }
 
 a {
-    @apply ease-all;
-
-    &:hover,
-    &:focus {
-        @apply text-theme-dark;
-    }
+    @apply w-fit ease-all;
 }
 
 .text-content {
-    @apply rg:text-lg lg:gap-2 rg:gap-4 flex flex-col gap-3 font-light;
+    @apply lg:text-lg flex flex-col gap-2 font-light;
 
     h2,
     h3,
@@ -32,7 +27,7 @@ a {
 
     h3,
     h4 {
-        @apply mt-2 lg:text-2xl text-xl;
+        @apply mt-3 lg:text-2xl text-xl;
     }
 
     h5,
@@ -46,11 +41,16 @@ a {
 
     a {
         @apply ease-all underline;
+
+        &:hover,
+        &:focus {
+            @apply text-theme-dark;
+        }
     }
 
     ul,
     ol {
-        @apply marker:text-theme-dark flex flex-col gap-1.5 rl:gap-2.5 ml-4 lg:ml-6 list-disc;
+        @apply marker:text-theme-dark flex flex-col gap-1.5 lg:gap-2.5 ml-4 lg:ml-6 list-disc;
 
         li {
             > ul,

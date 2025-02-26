@@ -20,7 +20,7 @@ module.exports = {
         screens: {
             sm: '460px',
             md: '768px',
-            rg: '1024px',
+            lg: '1024px',
             rl: '1240px',
             lg: '1440px',
             xl: '1920px',
@@ -62,6 +62,9 @@ module.exports = {
                 3: 3,
                 4: 4,
                 5: 5,
+            },
+            translate: {
+                '1.25': '0.313rem', // 5px
             },
         },
     },

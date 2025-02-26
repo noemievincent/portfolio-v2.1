@@ -15,7 +15,7 @@ $linkedin = get_field('core_socials_linkedin', 'options');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head() ?>
 </head>
-<body <?php body_class('flex flex-col h-screen') ?> data-theme="<?= $_GET['theme'] ?? $default_theme_color; ?>">
+<body <?php body_class('flex flex-col min-h-screen') ?> data-theme="<?= $_GET['theme'] ?? $default_theme_color; ?>">
 <?php
 
 wp_body_open();
@@ -24,10 +24,10 @@ include get_theme_file_path() . '/inc/svg.php';
 ?>
 
 <header id="top"
-        class="flex-0 w-full z-50 text-lg rg:text-xl font-mono border-b-2 border-b-theme-dark top-0 <?= is_front_page() ? 'fixed' : 'sticky' ?>">
-    <div id="sub-header" class="px-default grid-default bg-theme-dark text-black py-2 rg:py-3 ease-all relative z-40">
-        <div class="col-span-full rg:col-start-2 rg:col-span-10 2xl:col-start-3 2xl:col-span-8 flex justify-between">
-            <ul class="flex items-center gap-2.5 rg:gap-3.5">
+        class="flex-0 w-full z-50 text-lg lg:text-xl font-mono border-b-2 border-b-theme-dark top-0 <?= is_front_page() ? 'fixed' : 'sticky' ?>">
+    <div id="sub-header" class="px-default grid-default bg-theme-dark text-black py-2 lg:py-3 ease-all relative z-40">
+        <div class="col-span-full lg:col-start-2 lg:col-span-10 2xl:col-start-3 2xl:col-span-8 flex justify-between">
+            <ul class="flex items-center gap-2.5 lg:gap-3.5">
                 <?php if ($github) : ?>
                     <li>
                         <a href="<?= $github ?>" target="_blank"
@@ -56,14 +56,14 @@ include get_theme_file_path() . '/inc/svg.php';
             <?php custom_language_switcher() ?>
         </div>
     </div>
-    <div id="main-header" class="px-default grid-default bg-white/80 relative py-6 rg:py-12 ease-all">
+    <div id="main-header" class="px-default grid-default bg-white/80 relative py-6 lg:py-12 ease-all">
         <input id="toggle-menu" class="toggle-menu lg:hidden absolute opacity-0 sr-only" type="checkbox">
-        <div class="burger-container col-span-full rg:col-start-2 rg:col-span-1 2xl:col-start-3 flex items-center justify-between relative z-30">
+        <div class="burger-container col-span-full lg:col-start-2 lg:col-span-1 2xl:col-start-3 flex items-center justify-between relative z-30">
             <a href="<?= home_url() ?>" class="w-fit h-fit inline-flex group">
-                <span class="h-8 rg:h-10 aspect-square inline-block border-2 border-black ease-all group-hover:border-theme-dark group-focus:border-theme-dark"></span>
+                <span class="h-8 lg:h-10 aspect-square inline-block border-2 border-black ease-all group-hover:border-theme-dark group-focus:border-theme-dark"></span>
                 <span class="sr-only"><?= __('Retour à l\'accueil', 'nv_portfolio'); ?></span>
             </a>
-            <label for="toggle-menu" id="menu-button" class="burger-menu rg:hidden w-8 h-5 cursor-pointer">
+            <label for="toggle-menu" id="menu-button" class="burger-menu lg:hidden w-8 h-5 cursor-pointer">
                     <span class="lines">
                         <span aria-hidden="true"
                               class="line-1 bg-black origin-top-right"></span>
@@ -74,14 +74,14 @@ include get_theme_file_path() . '/inc/svg.php';
                 <span class="sr-only"><?= __('Ouvrir/fermer le menu', 'nv_portfolio') ?></span>
             </label>
         </div>
-        <div class="header-mobile rg:col-end-12 rg:col-span-8 xl:col-end-12 xl:col-span-7 2xl:col-end-11 2xl:col-span-6 max-rg:bg-white">
-            <div class="flex max-rg:flex-col items-center justify-center rg:justify-between h-full gap-16">
+        <div class="header-mobile lg:col-end-12 lg:col-span-8 xl:col-end-12 xl:col-span-7 2xl:col-end-11 2xl:col-span-6 max-lg:bg-white">
+            <div class="flex max-lg:flex-col items-center justify-center lg:justify-between h-full gap-16">
                 <div role="navigation"
-                     class="gap-16 max-rg:after:h-0.5 max-rg:after:w-20 max-rg:after:bg-black flex flex-col items-center">
+                     class="gap-16 max-lg:after:h-0.5 max-lg:after:w-20 max-lg:after:bg-black flex flex-col items-center">
                     <?php wp_nav_menu([
                         'theme_location' => 'header',
                         'container' => false,
-                        'menu_class' => 'header-menu main-menu',
+                        'menu_class' => 'header-menu',
                     ]); ?>
                 </div>
                 <?= get_template_part('template-parts/custom-theme-switcher') ?>

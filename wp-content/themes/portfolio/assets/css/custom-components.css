@@ -1,2 +1,25 @@
 @layer components {
+    .btn-primary {
+        @apply relative z-1 max-sm:w-full font-mono text-center text-lg lg:text-xl ease-all;
+
+        .top {
+            @apply flex items-center justify-center gap-2.5 lg:gap-3.5 py-2.5 px-7 lg:py-3 lg:px-8 bg-white border border-black ease-all;
+        }
+
+        &::before {
+            @apply content-[''] absolute -z-2 inset-0 bg-black translate-x-1.25 translate-y-1.25 ease-all;
+        }
+
+        &:hover {
+            .top {
+                @apply translate-x-1.25 translate-y-1.25;
+            }
+        }
+
+        &:focus {
+            .top {
+                @apply translate-x-1.25 translate-y-1.25 bg-theme-dark border-theme-dark text-white;
+            }
+        }
+    }
 }

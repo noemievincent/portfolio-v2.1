@@ -1,25 +1,25 @@
 header {
   &.scrolled {
     #sub-header {
-      @apply py-1 rg:py-1.5
+      @apply py-1 lg:py-1.5
     }
 
     #main-header {
-      @apply py-4 rg:py-7;
+      @apply py-4 lg:py-7;
     }
   }
 
   &.menu-opened {
     #main-header {
       .header-mobile {
-        @apply max-rg:translate-y-0;
+        @apply max-lg:translate-y-0;
       }
     }
   }
 
   #main-header {
     .header-mobile {
-      @apply max-rg:-translate-y-[200vh] max-rg:duration-700 max-rg:transition-all max-rg:ease-in-out max-rg:fixed max-rg:z-10 max-rg:h-screen max-rg:overflow-auto max-rg:inset-x-0 max-rg:top-0 ;
+      @apply max-lg:-translate-y-[200vh] max-lg:duration-700 max-lg:transition-all max-lg:ease-in-out max-lg:fixed max-lg:z-10 max-lg:h-screen max-lg:overflow-auto max-lg:inset-x-0 max-lg:top-0 ;
     }
 
     .burger-menu {
@@ -42,8 +42,7 @@ header {
       &.close {
         .lines {
           .line-1 {
-            @apply m-0 -rotate-45;
-            width: 80%;
+            @apply m-0 -rotate-45 w-[80%];
           }
 
           .line-2 {
@@ -51,15 +50,14 @@ header {
           }
 
           .line-3 {
-            @apply m-0 rotate-45;
-            width: 80%;
+            @apply m-0 rotate-45 w-[80%];
           }
         }
       }
     }
 
     .header-menu {
-      @apply flex max-rg:flex-col items-center justify-center gap-10 rg:gap-12 max-rg:text-2xl;
+      @apply flex max-lg:flex-col items-center justify-center gap-10 lg:gap-12 max-lg:text-2xl;
 
       .menu-item {
         @apply relative flex items-center justify-center;
@@ -74,7 +72,7 @@ header {
 
         &:hover, &:focus, &.current-section-item {
           a {
-            @apply !text-black after:opacity-100 after:scale-75 rg:after:scale-90;
+            @apply after:opacity-100 after:scale-75 lg:after:scale-90;
           }
         }
       }
@@ -90,6 +88,38 @@ header {
       &:hover .inner-circle,
       &.active .inner-circle {
         @apply opacity-100;
+      }
+    }
+  }
+}
+
+footer {
+  .rgpd-menu {
+    @apply font-light lg:text-lg flex max-lg:flex-col lg:items-center lg:justify-end gap-1 lg:gap-10;
+
+    a.old {
+      @apply relative;
+
+      &::after {
+        @apply content-[''] block bg-black absolute w-0 h-px right-0 ease-all;
+      }
+
+      &:hover, &:focus {
+        &::after {
+          @apply w-full left-0;
+        }
+      }
+    }
+
+    a {
+      @apply relative z-1;
+
+      &::after {
+        @apply content-[''] inline-block h-6 aspect-square rounded-full bg-white/60 absolute -z-1 top-0 -left-2.5 lg:-left-3 opacity-0 scale-0 ease-all;
+      }
+
+      &:hover, &:focus {
+        @apply after:opacity-100 after:scale-[0.7]
       }
     }
   }
