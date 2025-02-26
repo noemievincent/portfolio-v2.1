@@ -17,8 +17,8 @@ $cpt_project = [
         'name' => __('Projets', 'nv_core'),
         'singular_name' => __('Projet', 'nv_core'),
         'menu_name' => __('Projets', 'nv_core'),
-        'add_new' => __('Ajouter un project', 'nv_core'),
-        'add_new_item' => __('Ajouter un nouveau project', 'nv_core'),
+        'add_new' => __('Ajouter un projet', 'nv_core'),
+        'add_new_item' => __('Ajouter un nouveau projet', 'nv_core'),
         'new_item' => __('Nouveau projet', 'nv_core'),
         'edit_item' => __('Modifier le projet', 'nv_core'),
         'view_item' => __('Voir le projet', 'nv_core'),
@@ -44,7 +44,7 @@ function register_custom_post_type($post_type)
             'view_item' => __('Voir l\'élément', 'nv_core'),
             'search_items' => __('Rechercher un élément', 'nv_core'),
             'not_found' => __('Aucun élément trouvé', 'nv_core'),
-            'all_items' => __('Tous les élément', 'nv_core'),
+            'all_items' => __('Tous les éléments', 'nv_core'),
         ];
 
     $args = [

@@ -1,0 +1,120 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Portfolio\n"
+"POT-Creation-Date: 2025-02-26 15:01+0100\n"
+"PO-Revision-Date: 2025-02-26 15:01+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+
+#: inc/cpts.php:11 inc/cpts.php:18
+msgid "Projet"
+msgstr "Projet"
+
+#: inc/cpts.php:17 inc/cpts.php:19
+msgid "Projets"
+msgstr "Projets"
+
+#: inc/cpts.php:20
+msgid "Ajouter un projet"
+msgstr "Ajouter un projet"
+
+#: inc/cpts.php:21
+msgid "Ajouter un nouveau projet"
+msgstr "Ajouter un nouveau projet"
+
+#: inc/cpts.php:22
+msgid "Nouveau projet"
+msgstr "Nouveau projet"
+
+#: inc/cpts.php:23
+msgid "Modifier le projet"
+msgstr "Modifier le projet"
+
+#: inc/cpts.php:24
+msgid "Voir le projet"
+msgstr "Voir le projet"
+
+#: inc/cpts.php:25
+msgid "Rechercher un projet"
+msgstr "Rechercher un projet"
+
+#: inc/cpts.php:26
+msgid "Aucun projet trouvé"
+msgstr "Aucun projet trouvé"
+
+#: inc/cpts.php:27
+msgid "Tous les projets"
+msgstr "Tous les projets"
+
+#: inc/cpts.php:40
+msgid "Ajouter un élément"
+msgstr "Ajouter un élément"
+
+#: inc/cpts.php:41
+msgid "Ajouter un nouvel élément"
+msgstr "Ajouter un nouvel élément"
+
+#: inc/cpts.php:42
+msgid "Nouvel élément"
+msgstr "Nouvel élément"
+
+#: inc/cpts.php:43
+msgid "Modifier un élément"
+msgstr "Modifier un élément"
+
+#: inc/cpts.php:44
+msgid "Voir l'élément"
+msgstr "Voir l'élément"
+
+#: inc/cpts.php:45
+msgid "Rechercher un élément"
+msgstr "Rechercher un élément"
+
+#: inc/cpts.php:46
+msgid "Aucun élément trouvé"
+msgstr "Aucun élément trouvé"
+
+#: inc/cpts.php:47
+msgid "Tous les éléments"
+msgstr "Tous les éléments"
+
+#: inc/cpts.php:77
+msgid "Tous les termes"
+msgstr "Tous les termes"
+
+#: inc/cpts.php:78
+msgid "Éditer le terme"
+msgstr "Éditer le terme"
+
+#: inc/cpts.php:79
+msgid "Voir le terme"
+msgstr "Voir le terme"
+
+#: inc/cpts.php:80
+msgid "Mettre à jour le terme"
+msgstr "Mettre à jour le terme"
+
+#: inc/cpts.php:81
+msgid "Ajouter un terme"
+msgstr "Ajouter un terme"
+
+#: inc/cpts.php:82
+msgid "Nouveau terme"
+msgstr "Nouveau terme"
+
+#: inc/cpts.php:83
+msgid "Rechercher parmi les termes"
+msgstr "Rechercher parmi les termes"
+
+#: inc/cpts.php:84
+msgid "Termes les plus utilisés"
+msgstr "Termes les plus utilisés"
