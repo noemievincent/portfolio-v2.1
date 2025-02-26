@@ -7,6 +7,8 @@
 @import 'tailwindcss/utilities';
 @import './custom-utilities.css';
 
+@import 'scss/fonts.scss';
+
 /* admin bar fix */
 body.admin-bar {
 	max-height: calc(100vh - 32px);

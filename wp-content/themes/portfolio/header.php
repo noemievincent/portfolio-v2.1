@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head() ?>
 </head>
-<body <?php body_class('flex flex-col h-screen') ?>>
+<body <?php body_class('flex flex-col h-screen') ?> data-theme="<?= isset($_GET['theme']) ? $_GET['theme'] : 'pink'; ?>">
 <?php wp_body_open(); ?>
 <?php include get_theme_file_path() . '/inc/svg.php'; ?>
 
@@ -14,4 +14,3 @@
 </header>
 
 <main class="flex flex-col flex-grow">
-
