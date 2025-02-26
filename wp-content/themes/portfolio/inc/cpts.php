@@ -3,7 +3,31 @@
 /** CPTS **/
 function create_posttype()
 {
+    global $cpt_project;
+    register_custom_post_type($cpt_project);
 }
+
+$cpt_project = [
+    'name' => __('Projet', 'nv_core'),
+    'slug' => 'project',
+    'menu_icon' => 'dashicons-portfolio',
+    'menu_position' => 5,
+    'rewrite' => ['slug' => 'projects'],
+    'labels' => [
+        'name' => __('Projets', 'nv_core'),
+        'singular_name' => __('Projet', 'nv_core'),
+        'menu_name' => __('Projets', 'nv_core'),
+        'add_new' => __('Ajouter un project', 'nv_core'),
+        'add_new_item' => __('Ajouter un nouveau project', 'nv_core'),
+        'new_item' => __('Nouveau projet', 'nv_core'),
+        'edit_item' => __('Modifier le projet', 'nv_core'),
+        'view_item' => __('Voir le projet', 'nv_core'),
+        'search_items' => __('Rechercher un projet', 'nv_core'),
+        'not_found' => __('Aucun projet trouvé', 'nv_core'),
+        'all_items' => __('Tous les projets', 'nv_core'),
+    ],
+    'supports' => ['title', 'thumbnail', 'editor', 'excerpt'],
+];
 
 function register_custom_post_type($post_type)
 {
@@ -23,7 +47,7 @@ function register_custom_post_type($post_type)
             'all_items' => __('Tous les élément', 'nv_core'),
         ];
 
-    $args  = [
+    $args = [
         'label' => $name,
         'labels' => $labels,
         'publicly_queryable' => isset($post_type['publicly_queryable']) ? $post_type['publicly_queryable'] : false,
