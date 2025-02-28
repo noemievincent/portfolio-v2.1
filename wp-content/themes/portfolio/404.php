@@ -5,7 +5,7 @@
         <div class="col-span-full lg:col-start-3 lg:col-span-4 2xl:col-start-4 2xl:col-span-3 lg:pr-14 text-2xl text-theme-dark">
             <h1 class="lg:sr-only"><?= __('Erreur 404', 'nv_portfolio') ?></h1>
             <svg class="fill-theme w-full h-full max-lg:hidden">
-                <use xlink:href="#bubbles-10"></use>
+                <use xlink:href="#bubbles-error-404"></use>
             </svg>
         </div>
         <div class="col-span-full lg:col-end-11 lg:col-span-4 2xl:col-end-10 2xl:col-span-3 self-center flex flex-col gap-10 lg:gap-14 max-lg:h-full max-lg:flex-grow justify-between">
@@ -16,9 +16,6 @@
             <a href="<?= home_url(); ?>" class="btn-primary max-lg:mx-auto">
                 <span class="top">
                     <?= __('Retourner à l\'accueil', 'nv_portfolio'); ?>
-<!--                <svg class="w-4.5 h-4.5 fill-current -mt-1">-->
-                    <!--                    <use xlink:href="#github"></use>-->
-                    <!--                </svg>-->
                 </span>
             </a>
         </div>

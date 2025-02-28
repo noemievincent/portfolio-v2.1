@@ -47,6 +47,14 @@ module.exports = {
                     light: '#ECFCCB'
                 }
             },
+            fontSize: {
+                '1.5xl': ['1.375rem', '1.875rem'], // 22px
+                '2.5xl': ['1.75rem', '2.125rem'], // 28px
+                '3.5xl': ['2rem', '2.375rem'], // 32px
+                '4.5xl': ['2.75rem', '1'], // 44px
+                '5.5xl': ['3.25rem', '1'], // 52px
+                '7.5xl': ['5.25rem', '1'], // 84px
+            },
             spacing: {
                 4.5: '1.125rem', // 18px
                 5.5: '1.375rem', // 22px
