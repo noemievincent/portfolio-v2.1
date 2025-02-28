@@ -12,7 +12,7 @@ $btn_2 = get_field('about_btn_2');
 
 ?>
 
-<div id="<?= $section_id ?>" class="page-section grid-default px-default py-12 lg:py-24">
+<div id="<?= $section_id ?>" class="page-section bg-white grid-default px-default py-12 pb-24 lg:py-24 lg:pb-48">
     <div class="col-span-full lg:col-start-2 lg:col-span-5 2xl:col-start-3 2xl:col-span-4 lg:py-18 flex flex-col gap-8 lg:gap-16">
         <div class="flex flex-col gap-6 lg:gap-8">
             <h1 class="font-mono text-xl lg:text-2xl inline-flex flex-col gap-3 lg:gap-2.5">
