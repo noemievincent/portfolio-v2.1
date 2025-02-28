@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Portfolio\n"
-"POT-Creation-Date: 2025-02-26 15:16+0100\n"
-"PO-Revision-Date: 2025-02-26 15:16+0100\n"
+"POT-Creation-Date: 2025-02-27 18:12+0100\n"
+"PO-Revision-Date: 2025-02-27 18:14+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -14,6 +14,38 @@ msgstr ""
 "X-Poedit-KeywordsList: __\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: node_modules\n"
+
+#: 404.php:6
+msgid "Erreur 404"
+msgstr "Error 404"
+
+#: 404.php:13
+msgid "Oups !"
+msgstr "Oops!"
+
+#: 404.php:14
+msgid "Cette page n'a pas pu être trouvée."
+msgstr "This page could not be found."
+
+#: 404.php:18 header.php:64
+msgid "Retourner à l'accueil"
+msgstr "Back to homepage"
+
+#: footer.php:7
+msgid "Noémie Vincent. Tous droits réservés."
+msgstr "Noémie Vincent. All rights reserved."
+
+#: header.php:35 header.php:39
+msgid "Visiter mon profil GitHub"
+msgstr "Visit my GitHub profile"
+
+#: header.php:47 header.php:51
+msgid "Visiter ma page Linkedin"
+msgstr "Visit my Linkedin page"
+
+#: header.php:74
+msgid "Ouvrir/fermer le menu"
+msgstr "Open/close menu"
 
 #: inc/cpts.php:11 inc/cpts.php:18
 msgid "Projet"
@@ -118,6 +150,25 @@ msgstr "Search terms"
 #: inc/cpts.php:84
 msgid "Termes les plus utilisés"
 msgstr "Most frequently used terms"
+
+#: page-templates/page-rgpd.php:41 page.php:11
+msgid "Contenu à venir"
+msgstr "Work In Progress"
+
+#: template-parts/custom-theme-switcher.php:8
+msgid "Changer le thème en rose"
+msgstr "Switch theme to pink"
+
+#: template-parts/custom-theme-switcher.php:13
+msgid "Changer le thème en vert"
+msgstr "Switch theme to green"
+
+#: template-parts/custom-theme-switcher.php:18
+msgid "Changer le thème en bleu"
+msgstr "Switch theme to blue"
+
+#~ msgid "Retour à l'accueil"
+#~ msgstr "Back to homepage"
 
 #~ msgid "Bonjour je teste"
 #~ msgstr "Hello test"

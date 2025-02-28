@@ -26,39 +26,38 @@ $cpt_project = [
         'not_found' => __('Aucun projet trouvé', 'nv_core'),
         'all_items' => __('Tous les projets', 'nv_core'),
     ],
-    'supports' => ['title', 'thumbnail', 'editor', 'excerpt'],
+    'supports' => ['title', 'thumbnail'],
 ];
 
 function register_custom_post_type($post_type)
 {
     $name = $post_type['name'];
-    $labels = isset($post_type['labels']) ? $post_type['labels'] :
-        [
-            'name' => $name . 's',
-            'singular_name' => $name,
-            'menu_name' => $name . 's',
-            'add_new' => __('Ajouter un élément', 'nv_core'),
-            'add_new_item' => __('Ajouter un nouvel élément', 'nv_core'),
-            'new_item' => __('Nouvel élément', 'nv_core'),
-            'edit_item' => __('Modifier un élément', 'nv_core'),
-            'view_item' => __('Voir l\'élément', 'nv_core'),
-            'search_items' => __('Rechercher un élément', 'nv_core'),
-            'not_found' => __('Aucun élément trouvé', 'nv_core'),
-            'all_items' => __('Tous les éléments', 'nv_core'),
-        ];
+    $labels = $post_type['labels'] ?? [
+        'name' => $name . 's',
+        'singular_name' => $name,
+        'menu_name' => $name . 's',
+        'add_new' => __('Ajouter un élément', 'nv_core'),
+        'add_new_item' => __('Ajouter un nouvel élément', 'nv_core'),
+        'new_item' => __('Nouvel élément', 'nv_core'),
+        'edit_item' => __('Modifier un élément', 'nv_core'),
+        'view_item' => __('Voir l\'élément', 'nv_core'),
+        'search_items' => __('Rechercher un élément', 'nv_core'),
+        'not_found' => __('Aucun élément trouvé', 'nv_core'),
+        'all_items' => __('Tous les éléments', 'nv_core'),
+    ];
 
     $args = [
         'label' => $name,
         'labels' => $labels,
-        'publicly_queryable' => isset($post_type['publicly_queryable']) ? $post_type['publicly_queryable'] : false,
-        'menu_icon' => isset($post_type['menu_icon']) ? $post_type['menu_icon'] : 'dashicons-admin-post',
-        'has_archive' => isset($post_type['has_archive']) ? $post_type['has_archive'] : false,
-        'show_in_nav_menus' => isset($post_type['show_in_nav_menus']) ? $post_type['show_in_nav_menus'] : false,
-        'rewrite' => isset($post_type['rewrite']) ? $post_type['rewrite'] : true,
-        'supports' => isset($post_type['supports']) ? $post_type['supports'] : ['title', 'thumbnail'],
-        'public' => isset($post_type['public']) ? $post_type['public'] : true,
+        'publicly_queryable' => $post_type['publicly_queryable'] ?? false,
+        'menu_icon' => $post_type['menu_icon'] ?? 'dashicons-admin-post',
+        'has_archive' => $post_type['has_archive'] ?? false,
+        'show_in_nav_menus' => $post_type['show_in_nav_menus'] ?? false,
+        'rewrite' => $post_type['rewrite'] ?? true,
+        'supports' => $post_type['supports'] ?? ['title', 'thumbnail'],
+        'public' => $post_type['public'] ?? true,
+        'menu_position' => $post_type['menu_position'] ?? 10,
         'show_ui' => true,
-        'menu_position' => isset($post_type['menu_position']) ? $post_type['menu_position'] : 10,
     ];
 
     if (isset($post_type['additional_args'])) {
@@ -88,7 +87,7 @@ function register_custom_post_type($post_type)
                 'label' => $t_name,
                 'labels' => $t_labels,
                 'show_admin_column' => true,
-                'hierarchical' => isset($taxonomy['hierarchical']) ? $taxonomy['hierarchical'] : true,
+                'hierarchical' => $taxonomy['hierarchical'] ?? true,
             ];
 
             if (array_key_exists('hide_meta_box', $taxonomy)) {

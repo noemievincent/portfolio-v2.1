@@ -5,6 +5,8 @@ $default_theme_color = get_field('core_default_theme_color', 'options') ?? 'pink
 $github = get_field('core_socials_github', 'options');
 $linkedin = get_field('core_socials_linkedin', 'options');
 
+$logos = get_field('core_logos', 'options');
+
 ?>
 
 <!DOCTYPE html>
@@ -56,12 +58,15 @@ include get_theme_file_path() . '/inc/svg.php';
             <?php custom_language_switcher() ?>
         </div>
     </div>
-    <div id="main-header" class="px-default grid-default bg-white/80 relative py-6 lg:py-12 ease-all">
+    <div id="main-header" class="px-default grid-default bg-white/90 relative py-6 lg:py-8 ease-all">
         <input id="toggle-menu" class="toggle-menu lg:hidden absolute opacity-0 sr-only" type="checkbox">
         <div class="burger-container col-span-full lg:col-start-2 lg:col-span-1 2xl:col-start-3 flex items-center justify-between relative z-30">
             <a href="<?= home_url() ?>" class="w-fit h-fit inline-flex group">
-                <span class="h-8 lg:h-10 aspect-square inline-block border-2 border-black ease-all group-hover:border-theme-dark group-focus:border-theme-dark"></span>
-                <span class="sr-only"><?= __('Retour à l\'accueil', 'nv_portfolio'); ?></span>
+                <?php if (array_key_exists('logo', $logos)) : ?>
+                    <img class="style-svg w-12 lg:w-18 aspect-square ease-all group-hover:fill-theme-dark group-focus:fill-theme-dark"
+                         src="<?= $logos['logo'] ?>" alt="">
+                <?php endif; ?>
+                <span class="sr-only"><?= __('Retourner à l\'accueil', 'nv_portfolio'); ?></span>
             </a>
             <label for="toggle-menu" id="menu-button" class="burger-menu lg:hidden w-8 h-5 cursor-pointer">
                     <span class="lines">

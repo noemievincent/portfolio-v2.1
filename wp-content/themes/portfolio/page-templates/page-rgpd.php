@@ -14,7 +14,7 @@ if ($is_policy) {
             <?php if ($rgpd_pages->have_posts()) : ?>
                 <div class="col-span-full lg:col-start-4 lg:col-span-6 2xl:col-start-5 2xl:col-span-4 flex flex-col gap-5 lg:gap-14">
                     <?= get_template_part('template-parts/title-with-bubbles') ?>
-                    <ul class="relative lg:text-2xl divide-theme-light flex flex-col items-center text-xl text-center divide-y lg:w-4/6 2xl:w-3/4">
+                    <ul class="relative lg:text-2xl divide-theme-light flex flex-col items-center text-xl text-center divide-y ">
                         <?php while ($rgpd_pages->have_posts()) : $rgpd_pages->the_post(); ?>
                             <li class="flex items-center w-full">
                                 <a href="<?= get_the_permalink() ?>"
@@ -32,11 +32,11 @@ if ($is_policy) {
                 </div>
             <?php endif; ?>
         <?php else : ?>
-            <div class="col-span-full lg:col-start-3 lg:col-span-8 2xl:col-start-4 2xl:col-span-6 flex flex-col gap-8">
+            <div class="col-span-full lg:col-start-4 lg:col-span-6 2xl:col-start-5 2xl:col-span-4 flex flex-col gap-8">
                 <?= get_template_part('template-parts/title-with-bubbles') ?>
                 <div class="text-content">
-                    <?php if (get_the_content()) : ?>
-                        <?= the_content(); ?>
+                    <?php if ($content = get_the_content()) : ?>
+                        <?= $content ?>
                     <?php else : ?>
                         <p class="text-lg lg:text-xl"><?= __('Contenu à venir', 'nv_portfolio'); ?></p>
                     <?php endif; ?>
