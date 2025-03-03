@@ -25,7 +25,7 @@ if ($projects->have_posts() || true) :
              class="page-section relative grid-default px-default bg-theme-lightest py-12 pb-36 lg:py-16 lg:pb-48">
         <div class="col-span-full lg:col-start-2 lg:col-span-10 flex flex-col gap-10 lg:gap-16">
             <h2 id="<?= $section_id ?>-title"
-                class="relative z-1 font-mono text-center text-3xl lg:text-5.5xl w-fit mx-auto">
+                class="relative z-1 font-mono text-center text-3xl lg:text-5xl w-fit mx-auto">
                 <span><?= $section_title ?></span>
                 <svg class="fill-theme-light aspect-[1.50] w-[120px] lg:w-[224px] absolute -z-1 rotate-[-160deg] -bottom-2 -right-10 lg:-bottom-4 lg:-right-20">
                     <use xlink:href="#bubbles-2"></use>

@@ -3,7 +3,7 @@
         @apply flex relative z-1 max-sm:w-full w-fit h-fit font-mono text-center text-lg lg:text-xl ease-all;
 
         .top {
-            @apply w-full h-full flex items-center justify-center gap-2.5 lg:gap-3.5 py-2.5 px-7 lg:py-3 lg:px-8 bg-white border border-black ease-all;
+            @apply w-full h-full flex items-center justify-center gap-2.5 lg:gap-3.5 py-2.5 px-7 lg:py-3 lg:px-8 bg-white border-2 border-black ease-all;
         }
 
         &::before {
@@ -36,6 +36,18 @@
 
         &:focus {
             @apply text-theme-dark after:bg-theme-dark;
+        }
+    }
+
+    .underlined-link {
+        @apply relative z-1;
+
+        &::after {
+            @apply content-[''] block absolute top-full bg-black h-0.5 w-0 right-0 ease-all;
+        }
+
+        &:hover {
+            @apply after:w-full after:left-0;
         }
     }
 }

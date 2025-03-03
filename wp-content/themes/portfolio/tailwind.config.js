@@ -38,6 +38,9 @@ module.exports = {
                     green: '#84A761',
                     blue: '#36A7A4'
                 },
+                grey: {
+                    DEFAULT: '#7D7D83',
+                },
                 error: {
                     DEFAULT: '#B70F0F',
                     light: '#FECACA'
@@ -73,6 +76,12 @@ module.exports = {
             },
             translate: {
                 '1.25': '0.313rem', // 5px
+            },
+            backgroundImage: {
+                check: 'url(/assets/svgs/icons/check.svg)',
+            },
+            content: {
+                check: 'url(/assets/svgs/icons/check.svg)',
             },
         },
     },

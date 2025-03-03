@@ -8,8 +8,8 @@
 @import './custom-utilities.css';
 
 @import 'scss/fonts.scss';
-@import 'scss/lang-switcher.scss';
 @import 'scss/menu.scss';
+@import 'scss/form.scss';
 
 /* admin bar fix */
 body.admin-bar {

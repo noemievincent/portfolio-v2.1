@@ -35,7 +35,7 @@ include get_theme_file_path() . '/inc/svg.php';
                         <a href="<?= $github ?>" target="_blank"
                            class="flex items-center justify-center hover:text-white focus:text-white"
                            title="<?= __('Visiter mon profil GitHub', 'nv_portfolio'); ?>">
-                            <svg class="w-5.5 h-5.5 fill-current">
+                            <svg class="shrink-0 w-5.5 h-5.5 fill-current">
                                 <use xlink:href="#github"></use>
                             </svg>
                             <span class="sr-only"><?= __('Visiter mon profil GitHub', 'nv_portfolio'); ?></span>
@@ -47,7 +47,7 @@ include get_theme_file_path() . '/inc/svg.php';
                         <a href="<?= $linkedin ?>" target="_blank"
                            class="flex items-center justify-center hover:text-white focus:text-white"
                            title="<?= __('Visiter ma page Linkedin', 'nv_portfolio'); ?>">
-                            <svg class="w-5 h-5 fill-current">
+                            <svg class="shrink-0 w-5 h-5 fill-current">
                                 <use xlink:href="#linkedin"></use>
                             </svg>
                             <span class="sr-only"><?= __('Visiter ma page Linkedin', 'nv_portfolio'); ?></span>

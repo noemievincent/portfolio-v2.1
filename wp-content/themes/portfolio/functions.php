@@ -14,6 +14,7 @@ include "inc/inc.vite.php";
 include "inc/cpts.php";
 
 include "custom/functions/custom_language_switcher.php";
+include "custom/functions/custom_submit_button.php";
 
 add_action('after_setup_theme', 'nv_setup');
 
