@@ -133,8 +133,7 @@
               @apply content-[''] absolute -z-2 inset-0 bg-black translate-x-1.25 translate-y-1.25 ease-all;
             }
 
-            &:hover:not(:disabled),
-            {
+            &:hover:not(:disabled) {
               .top {
                 @apply translate-x-1.25 translate-y-1.25;
               }

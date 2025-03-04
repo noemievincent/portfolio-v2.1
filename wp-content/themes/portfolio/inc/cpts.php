@@ -27,6 +27,7 @@ $cpt_project = [
         'all_items' => __('Tous les projets', 'nv_core'),
     ],
     'supports' => ['title', 'thumbnail'],
+    'publicly_queryable' => true,
 ];
 
 function register_custom_post_type($post_type)

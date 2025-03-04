@@ -15,6 +15,7 @@ include "inc/cpts.php";
 
 include "custom/functions/custom_language_switcher.php";
 include "custom/functions/custom_submit_button.php";
+include "custom/functions/load_more_projects.php";
 
 add_action('after_setup_theme', 'nv_setup');
 
@@ -37,8 +38,8 @@ function nv_setup()
     add_filter('wpcf7_autop_or_not', '__return_false');
 }
 
-add_action('acf/init', 'create_acf_options_page');
-function create_acf_options_page()
+add_action('acf/init', 'nv_create_acf_options_page');
+function nv_create_acf_options_page()
 {
     if (function_exists('acf_add_options_page')) {
         acf_add_options_page([
@@ -51,8 +52,8 @@ function create_acf_options_page()
     }
 }
 
-add_filter('wp_nav_menu_objects', 'add_current_language_to_menu_items', 10, 2);
-function add_current_language_to_menu_items($items, $args)
+add_filter('wp_nav_menu_objects', 'nv_add_current_language_to_menu_items', 10, 2);
+function nv_add_current_language_to_menu_items($items, $args)
 {
     if ($args->theme_location == 'header') {
         foreach ($items as $item) {
