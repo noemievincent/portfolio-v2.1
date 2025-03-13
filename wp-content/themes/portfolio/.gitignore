@@ -1,0 +1,10 @@
+/node_modules
+/localhost.pem
+/localhost-key.pem
+
+/.idea
+/.devcontainer
+/dist
+
+imagify.key
+acf-pro.key

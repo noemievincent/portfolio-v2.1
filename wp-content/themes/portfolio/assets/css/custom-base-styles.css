@@ -1,0 +1,66 @@
+html {
+    @apply font-sans bg-white text-black selection:text-black selection:bg-theme scroll-smooth box-border;
+}
+
+a {
+    @apply w-fit ease-all;
+}
+
+.text-content {
+    @apply lg:text-lg flex flex-col gap-2 font-light;
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-mono lg:text-2xl text-xl mt-6 mb-1 first:mt-0;
+
+        + h2,
+        + h3,
+        + h4,
+        + h5,
+        + h6 {
+            @apply mt-0;
+        }
+    }
+
+    h3,
+    h4 {
+        @apply mt-3 lg:text-2xl text-xl;
+    }
+
+    h5,
+    h6 {
+        @apply lg:text-xl text-lg font-medium;
+    }
+
+    strong {
+        @apply font-medium;
+    }
+
+    a {
+        @apply underline;
+
+        &:hover,
+        &:focus {
+            @apply text-theme-dark;
+        }
+    }
+
+    ul,
+    ol {
+        @apply marker:text-theme-dark flex flex-col gap-1.5 lg:gap-2.5 ml-4 lg:ml-6 list-disc;
+
+        li {
+            > ul,
+            > ol {
+                @apply gap-0.5 lg:gap-1;
+            }
+        }
+    }
+
+    ol {
+        @apply marker:text-theme-dark list-decimal;
+    }
+}

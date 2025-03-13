@@ -1,0 +1,126 @@
+header {
+  &.scrolled {
+    #sub-header {
+      @apply py-1 lg:py-1.5
+    }
+
+    #main-header {
+      @apply py-4;
+    }
+  }
+
+  &.menu-opened {
+    #main-header {
+      .header-mobile {
+        @apply max-lg:translate-y-0;
+      }
+    }
+  }
+
+  #main-header {
+    .header-mobile {
+      @apply max-lg:-translate-y-[200vh] max-lg:duration-700 max-lg:transition-all max-lg:ease-in-out max-lg:fixed max-lg:z-10 max-lg:h-screen max-lg:overflow-auto max-lg:inset-x-0 max-lg:top-0 ;
+    }
+
+    .burger-menu {
+      .lines {
+        @apply flex flex-col items-end justify-between h-full w-full;
+
+        > span {
+          @apply block w-full h-0.5 ease-all;
+        }
+      }
+
+      &:hover, &:focus {
+        .lines {
+          > span {
+            @apply bg-theme-dark;
+          }
+        }
+      }
+
+      &.close {
+        .lines {
+          .line-1 {
+            @apply m-0 -rotate-45 w-[80%];
+          }
+
+          .line-2 {
+            @apply scale-x-0;
+          }
+
+          .line-3 {
+            @apply m-0 rotate-45 w-[80%];
+          }
+        }
+      }
+    }
+
+    .header-menu {
+      @apply flex max-lg:flex-col items-center justify-center gap-10 lg:gap-12 max-lg:text-2xl;
+
+      .menu-item {
+        @apply relative flex items-center justify-center;
+
+        a {
+          @apply relative z-1 ease-all;
+
+          &::after {
+            @apply content-[''] inline-block h-full aspect-square rounded-full bg-theme-light absolute -z-1 top-0 -left-4 opacity-0 scale-0 ease-all;
+          }
+        }
+
+        &:hover, &:focus, &.current-section-item {
+          a {
+            @apply after:opacity-100 after:scale-75 lg:after:scale-90;
+          }
+        }
+      }
+    }
+
+    .color-button {
+      @apply cursor-pointer h-8 w-8 rounded-full border-4 relative ease-all;
+
+      .inner-circle {
+        @apply content-[''] block h-full w-full absolute inset-0 rounded-full border-4 border-white opacity-0 ease-all;
+      }
+
+      &:hover .inner-circle,
+      &.active .inner-circle {
+        @apply opacity-100;
+      }
+    }
+  }
+}
+
+footer {
+  .rgpd-menu {
+    @apply font-light lg:text-lg flex max-lg:flex-col lg:items-center lg:justify-end gap-1 lg:gap-10;
+
+    a.old {
+      @apply relative;
+
+      &::after {
+        @apply content-[''] block bg-black absolute w-0 h-px right-0 ease-all;
+      }
+
+      &:hover, &:focus {
+        &::after {
+          @apply w-full left-0;
+        }
+      }
+    }
+
+    a {
+      @apply relative z-1;
+
+      &::after {
+        @apply content-[''] inline-block h-6 aspect-square rounded-full bg-white/60 absolute -z-1 top-0 -left-2.5 lg:-left-3 opacity-0 scale-0 ease-all;
+      }
+
+      &:hover, &:focus {
+        @apply after:opacity-100 after:scale-[0.7]
+      }
+    }
+  }
+}

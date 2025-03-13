@@ -1,0 +1,15 @@
+.lang-switcher {
+  @apply flex items-center gap-2.5 lg:gap-3.5;
+
+  .lang-item a {
+    @apply relative z-1 ease-all;
+
+    &::after {
+      @apply content-[''] inline-block h-6 aspect-square rounded-full bg-white/60 absolute -z-1 top-0 -left-2.5 lg:-left-3 opacity-0 scale-0 ease-all;
+    }
+
+    &:hover, &:focus {
+      @apply after:opacity-100 after:scale-50
+    }
+  }
+}

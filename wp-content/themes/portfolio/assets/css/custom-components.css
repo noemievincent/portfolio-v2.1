@@ -1,0 +1,61 @@
+@layer components {
+    .btn-primary {
+        @apply flex relative z-1 max-sm:w-full w-fit h-fit font-mono text-center text-lg lg:text-xl ease-all;
+
+        .top {
+            @apply w-full h-full flex items-center justify-center gap-2.5 lg:gap-3.5 py-2.5 px-7 lg:py-3 lg:px-8 bg-white border-2 border-black ease-all;
+        }
+
+        &::before {
+            @apply content-[''] absolute -z-2 inset-0 bg-black translate-x-1.25 translate-y-1.25 ease-all;
+        }
+
+        &:hover:not(:disabled) {
+            .top {
+                @apply translate-x-1.25 translate-y-1.25;
+            }
+        }
+
+        &:focus-visible:not(:disabled) {
+            .top {
+                @apply translate-x-1.25 translate-y-1.25 bg-theme-dark border-theme-dark text-white;
+            }
+        }
+
+        &:disabled {
+            @apply cursor-not-allowed before:bg-grey;
+
+            .top {
+                @apply text-grey border-grey
+            }
+        }
+    }
+
+    .btn-secondary {
+        @apply flex items-center justify-center gap-2.5 lg:gap-3.5 relative z-1 max-sm:w-full w-fit h-fit font-mono text-center text-lg lg:text-xl ease-all;
+
+        &::after {
+            @apply content-[''] block absolute top-full mt-1 bg-black h-0.5 w-0 right-0 ease-all;
+        }
+
+        &:hover {
+            @apply after:w-full after:left-0;
+        }
+
+        &:focus {
+            @apply text-theme-dark after:bg-theme-dark;
+        }
+    }
+
+    .underlined-link {
+        @apply relative z-1;
+
+        &::after {
+            @apply content-[''] block absolute top-full bg-black h-0.5 w-0 right-0 ease-all;
+        }
+
+        &:hover {
+            @apply after:w-full after:left-0;
+        }
+    }
+}

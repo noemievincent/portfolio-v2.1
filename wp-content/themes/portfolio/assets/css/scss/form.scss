@@ -1,0 +1,164 @@
+.cf7-form {
+  form.wpcf7-form {
+    @apply flex flex-col-reverse gap-4;
+
+    .wpcf7-response-output {
+      @apply p-3 lg:px-4 m-0 text-center font-sans lg:text-lg border-2 border-black text-black;
+    }
+
+    &:is(.failed, .aborted, .spam, .invalid, .unaccepted) {
+      .wpcf7-response-output {
+        @apply border-error text-error;
+      }
+    }
+
+    &.sent {
+      .form-container {
+        @apply hidden;
+      }
+    }
+
+    .form-container {
+      @apply flex flex-col gap-6;
+
+      .column-container {
+        @apply w-full grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-4 justify-between;
+      }
+
+      label {
+        @apply flex flex-col gap-1 w-full;
+
+        .label-text {
+          @apply w-fit font-mono text-lg inline-flex items-center gap-2 -translate-x-5 ease-all;
+
+          &::before {
+            @apply content-[''] inline-block w-3 h-0.5 bg-black opacity-0 transition-opacity;
+          }
+
+          &.required {
+            @apply after:content-['*'] after:text-error after:-ml-1;
+          }
+        }
+
+        .label-hint {
+          @apply sr-only;
+        }
+
+        &:focus-within {
+          .label-text {
+            @apply translate-x-0;
+
+            &::before {
+              @apply opacity-100;
+            }
+          }
+        }
+      }
+
+      input:not([type='checkbox']),
+      textarea {
+        @apply w-full h-11 p-2 border-2 border-black outline outline-1 outline-transparent resize-none ease-all;
+
+        &.wpcf7-not-valid {
+          @apply border-error focus-visible:outline-error;
+
+          + .wpcf7-not-valid-tip {
+            @apply text-error pt-0.5 pl-0.5;
+          }
+        }
+
+        &:focus {
+          @apply outline-black;
+        }
+      }
+
+      textarea {
+        @apply h-48;
+      }
+
+      .bottom-container {
+        @apply flex flex-col gap-6 items-end lg:gap-10;
+
+        .wpcf7-form-control-wrap:has(.wpcf7-acceptance) {
+          .wpcf7-list-item {
+            @apply m-0;
+
+            label {
+              @apply cursor-pointer font-light text-sm grid grid-cols-[20px_1fr] items-start gap-4;
+            }
+
+            input {
+              @apply rounded-none relative mt-0.5 cursor-pointer appearance-none w-5.5 h-5.5 flex items-center justify-center bg-white border-2 border-black ease-all;
+
+              &::before {
+                @apply content-[''] absolute -z-2 w-5.5 h-5.5 bg-black translate-x-0.5 translate-y-0.5 ease-all;
+              }
+
+              &::after {
+                @apply content-[''] w-full h-full scale-[0.65] bg-check bg-no-repeat bg-contain opacity-0 ease-all;
+              }
+
+              &:hover {
+                @apply after:opacity-30;
+              }
+
+              &:checked {
+                @apply after:opacity-100;
+              }
+            }
+          }
+
+          .wpcf7-not-valid {
+            .wpcf7-list-item-label {
+              @apply text-red-700;
+            }
+
+            + .wpcf7-not-valid-tip {
+              @apply sr-only;
+            }
+          }
+        }
+
+        .submit-container {
+          @apply w-full;
+
+          .submit-button {
+            @apply flex relative z-1 w-full h-fit font-mono text-center text-lg lg:text-xl ease-all;
+
+            .top {
+              @apply w-full h-full flex items-center justify-center gap-2.5 lg:gap-3.5 py-2.5 px-7 lg:py-3 lg:px-8 bg-white border-2 border-black ease-all;
+            }
+
+            &::before {
+              @apply content-[''] absolute -z-2 inset-0 bg-black translate-x-1.25 translate-y-1.25 ease-all;
+            }
+
+            &:hover:not(:disabled) {
+              .top {
+                @apply translate-x-1.25 translate-y-1.25;
+              }
+            }
+
+            &:focus-visible:not(:disabled) {
+              .top {
+                @apply translate-x-1.25 translate-y-1.25 bg-theme-dark border-theme-dark text-white;
+              }
+            }
+
+            &:disabled {
+              @apply cursor-not-allowed before:bg-grey;
+
+              .top {
+                @apply text-grey border-grey
+              }
+            }
+          }
+
+          .wpcf7-spinner {
+            @apply absolute;
+          }
+        }
+      }
+    }
+  }
+}

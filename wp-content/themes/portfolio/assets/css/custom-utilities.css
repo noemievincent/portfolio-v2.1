@@ -1,0 +1,13 @@
+@layer utilities {
+    .grid-default {
+        @apply grid grid-cols-4 md:grid-cols-8 rl:grid-cols-12 gap-x-4;
+    }
+
+    .px-default {
+        @apply md:px-10 rl:px-14 xl:px-32 px-6;
+    }
+
+    .ease-all {
+        @apply transition-all duration-300 ease-in-out;
+    }
+}
