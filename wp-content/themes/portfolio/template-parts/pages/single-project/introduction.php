@@ -20,7 +20,7 @@ $color_palette = get_field('color_palette');
         <div class="flex flex-col gap-2 lg:gap-4">
             <?php if ($date) : ?>
                 <p class="flex items-center gap-2 text-lg font-light">
-                    <svg class="h-4 w-4 fill-black -mt-0.5">
+                    <svg class="shrink-0 h-4 w-4 fill-black -mt-0.5">
                         <use xlink:href="#calendar"></use>
                     </svg>
                     <span><?= $date; ?></span>
@@ -39,7 +39,7 @@ $color_palette = get_field('color_palette');
                 <a href="<?= $live_url ?>" target="_blank" class="btn-primary max-lg:w-full">
                         <span class="top">
                             <?= __('Voir le site', THEME_TEXT_DOMAIN) ?>
-                            <svg class="w-3 h-3 fill-current">
+                            <svg class="shrink-0 w-3 h-3 fill-current">
                                 <use xlink:href="#external-link"></use>
                             </svg>
                         </span>
@@ -48,7 +48,7 @@ $color_palette = get_field('color_palette');
             <?php if ($github_url) : ?>
                 <?php if ($show_live_url) : ?>
                     <a href="<?= $github_url; ?>" target="_blank" class="btn-secondary">
-                        <svg class="w-5 h-5 fill-current">
+                        <svg class="shrink-0 w-5 h-5 fill-current">
                             <use xlink:href="#github"></use>
                         </svg>
                         <?= __('Consulter le repo GitHub', THEME_TEXT_DOMAIN) ?>
@@ -57,7 +57,7 @@ $color_palette = get_field('color_palette');
                     <a href="<?= $github_url ?>" target="_blank" class="btn-primary max-lg:w-full">
                         <span class="top">
                             <?= __('GitHub', THEME_TEXT_DOMAIN) ?>
-                            <svg class="w-5 h-5 fill-current">
+                            <svg class="shrink-0 w-5 h-5 fill-current">
                                 <use xlink:href="#github"></use>
                             </svg>
                         </span>

@@ -1,0 +1,7 @@
+<svg id="bubbles-contact" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 380">
+    <path d="M260,250c0,71.8-58.2,130-130,130S0,321.8,0,250,58.2,120,130,120s130,58.2,130,130Z"/>
+    <circle cx="330" cy="90" r="90"/>
+    <circle cx="450" cy="230" r="50"/>
+    <circle cx="338" cy="258" r="38"/>
+    <circle cx="305" cy="335" r="25"/>
+</svg>

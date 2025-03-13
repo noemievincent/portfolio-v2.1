@@ -37,9 +37,6 @@ $btn_2 = get_field('about_btn_2');
                 <?php endif; ?>
                 <?php if ($btn_2) : ?>
                     <a href="<?= $btn_2['url'] ?>" target="<?= $btn_2['target'] ?>" class="btn-secondary">
-                        <!--                        <svg class="w-5 h-5 fill-current">-->
-                        <!--                            <use xlink:href="#github"></use>-->
-                        <!--                        </svg>-->
                         <?= $btn_2['title'] ?>
                     </a>
                 <?php endif; ?>
