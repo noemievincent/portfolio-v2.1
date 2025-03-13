@@ -34,11 +34,11 @@ include get_theme_file_path() . '/inc/svg.php';
                     <li>
                         <a href="<?= $github ?>" target="_blank"
                            class="flex items-center justify-center hover:text-white focus:text-white"
-                           title="<?= __('Visiter mon profil GitHub', 'nv_portfolio'); ?>">
+                           title="<?= __('Visiter mon profil GitHub', THEME_TEXT_DOMAIN); ?>">
                             <svg class="shrink-0 w-5.5 h-5.5 fill-current">
                                 <use xlink:href="#github"></use>
                             </svg>
-                            <span class="sr-only"><?= __('Visiter mon profil GitHub', 'nv_portfolio'); ?></span>
+                            <span class="sr-only"><?= __('Visiter mon profil GitHub', THEME_TEXT_DOMAIN); ?></span>
                         </a>
                     </li>
                 <?php endif; ?>
@@ -46,11 +46,11 @@ include get_theme_file_path() . '/inc/svg.php';
                     <li>
                         <a href="<?= $linkedin ?>" target="_blank"
                            class="flex items-center justify-center hover:text-white focus:text-white"
-                           title="<?= __('Visiter ma page Linkedin', 'nv_portfolio'); ?>">
+                           title="<?= __('Visiter ma page Linkedin', THEME_TEXT_DOMAIN); ?>">
                             <svg class="shrink-0 w-5 h-5 fill-current">
                                 <use xlink:href="#linkedin"></use>
                             </svg>
-                            <span class="sr-only"><?= __('Visiter ma page Linkedin', 'nv_portfolio'); ?></span>
+                            <span class="sr-only"><?= __('Visiter ma page Linkedin', THEME_TEXT_DOMAIN); ?></span>
                         </a>
                     </li>
                 <?php endif; ?>
@@ -58,7 +58,7 @@ include get_theme_file_path() . '/inc/svg.php';
             <?php custom_language_switcher() ?>
         </div>
     </div>
-    <div id="main-header" class="px-default grid-default bg-white/90 relative py-6 lg:py-8 ease-all">
+    <div id="main-header" class="px-default grid-default bg-white/90 relative py-4 lg:py-8 ease-all">
         <input id="toggle-menu" class="toggle-menu lg:hidden absolute opacity-0 sr-only" type="checkbox">
         <div class="burger-container col-span-full lg:col-start-2 lg:col-span-1 2xl:col-start-3 flex items-center justify-between relative z-30">
             <a href="<?= home_url() ?>" class="w-fit h-fit inline-flex group">
@@ -66,7 +66,7 @@ include get_theme_file_path() . '/inc/svg.php';
                     <img class="style-svg w-12 lg:w-18 aspect-square ease-all group-hover:fill-theme-dark group-focus:fill-theme-dark"
                          src="<?= $logos['logo'] ?>" alt="">
                 <?php endif; ?>
-                <span class="sr-only"><?= __('Retourner à l\'accueil', 'nv_portfolio'); ?></span>
+                <span class="sr-only"><?= __('Retourner à l\'accueil', THEME_TEXT_DOMAIN); ?></span>
             </a>
             <label for="toggle-menu" id="menu-button" class="burger-menu lg:hidden w-8 h-5 cursor-pointer">
                     <span class="lines">
@@ -76,7 +76,7 @@ include get_theme_file_path() . '/inc/svg.php';
                         <span aria-hidden="true"
                               class="line-3 bg-black origin-bottom-right"></span>
                     </span>
-                <span class="sr-only"><?= __('Ouvrir/fermer le menu', 'nv_portfolio') ?></span>
+                <span class="sr-only"><?= __('Ouvrir/fermer le menu', THEME_TEXT_DOMAIN) ?></span>
             </label>
         </div>
         <div class="header-mobile lg:col-end-12 lg:col-span-8 xl:col-end-12 xl:col-span-7 2xl:col-end-11 2xl:col-span-6 max-lg:bg-white">

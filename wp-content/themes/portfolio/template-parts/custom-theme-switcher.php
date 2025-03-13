@@ -5,17 +5,17 @@ $active_theme = isset($_GET['theme']) ? $_GET['theme'] : $default_theme_color;
 
 $colors = [
     'pink' => [
-        'label' => __('Changer le thème en rose', 'nv_portfolio'),
+        'label' => __('Changer le thème en rose', THEME_TEXT_DOMAIN),
         'bg_class' => 'bg-palette-pink',
         'border_class' => 'border-palette-pink',
     ],
     'green' => [
-        'label' => __('Changer le thème en vert', 'nv_portfolio'),
+        'label' => __('Changer le thème en vert', THEME_TEXT_DOMAIN),
         'bg_class' => 'bg-palette-green',
         'border_class' => 'border-palette-green',
     ],
     'blue' => [
-        'label' => __('Changer le thème en bleu', 'nv_portfolio'),
+        'label' => __('Changer le thème en bleu', THEME_TEXT_DOMAIN),
         'bg_class' => 'bg-palette-blue',
         'border_class' => 'border-palette-blue',
     ],

@@ -7,7 +7,7 @@ a {
 }
 
 .text-content {
-    @apply lg:text-lg flex flex-col gap-2 font-light;
+    @apply lg:text-lg flex flex-col gap-4 font-light;
 
     h2,
     h3,

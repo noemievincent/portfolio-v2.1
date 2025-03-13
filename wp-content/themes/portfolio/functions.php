@@ -9,6 +9,7 @@ if (!defined('ABSPATH'))
 // Main switch to get frontend assets from a Vite dev server OR from production built folder
 // it is recommended to move it into wp-config.php
 define('IS_VITE_DEVELOPMENT', true);
+defined('THEME_TEXT_DOMAIN') or define('THEME_TEXT_DOMAIN', 'nv_portfolio');
 
 include "inc/inc.vite.php";
 include "inc/cpts.php";

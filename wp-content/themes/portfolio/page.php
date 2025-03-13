@@ -8,7 +8,7 @@
                 <?php if ($content = get_the_content()) : ?>
                     <?= wpautop($content) ?>
                 <?php else : ?>
-                    <p class="text-lg lg:text-xl"><?= __('Contenu à venir', 'nv_portfolio'); ?></p>
+                    <p class="text-lg lg:text-xl"><?= __('Contenu à venir', THEME_TEXT_DOMAIN); ?></p>
                 <?php endif; ?>
             </div>
         </div>

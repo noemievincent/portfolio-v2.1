@@ -58,11 +58,11 @@ $linkedin = get_field('core_socials_linkedin', 'options');
                         <li>
                             <a href="mailto:<?= $github ?>" target="_blank"
                                class="bg-theme w-10 aspect-square rounded-full inline-flex items-center justify-center hover:bg-theme-dark hover:text-white ease-all"
-                               title="<?= __('Visiter mon profil GitHub', 'nv_portfolio'); ?>">
+                               title="<?= __('Visiter mon profil GitHub', THEME_TEXT_DOMAIN); ?>">
                                 <svg class="shrink-0 w-5 h-5 fill-current">
                                     <use xlink:href="#github"></use>
                                 </svg>
-                                <span class="sr-only"><?= __('Visiter mon profil GitHub', 'nv_portfolio'); ?></span>
+                                <span class="sr-only"><?= __('Visiter mon profil GitHub', THEME_TEXT_DOMAIN); ?></span>
                             </a>
                         </li>
                     <?php endif; ?>
@@ -71,11 +71,11 @@ $linkedin = get_field('core_socials_linkedin', 'options');
                             <a href="<?= $linkedin ?>"
                                target="_blank"
                                class="bg-theme w-10 aspect-square rounded-full inline-flex items-center justify-center hover:bg-theme-dark hover:text-white ease-all"
-                               title="<?= __('Visiter ma page Linkedin', 'nv_portfolio'); ?>">
+                               title="<?= __('Visiter ma page Linkedin', THEME_TEXT_DOMAIN); ?>">
                                 <svg class="shrink-0 w-5 h-5 fill-current">
                                     <use xlink:href="#linkedin"></use>
                                 </svg>
-                                <span class="sr-only"><?= __('Visiter ma page Linkedin', 'nv_portfolio'); ?></span>
+                                <span class="sr-only"><?= __('Visiter ma page Linkedin', THEME_TEXT_DOMAIN); ?></span>
                             </a>
                         </li>
                     <?php endif; ?>

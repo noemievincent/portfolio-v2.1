@@ -8,15 +8,13 @@ $section_id = get_field('projects_section_id');
 $initial_items_count = get_field('projects_initial_items_count') ?? -1;
 $add_items_count = get_field('projects_add_items_count') ?? 1;
 
-$results = nv_get_projects($initial_items_count);
+$results = portfolio_get_projects($initial_items_count);
 $projects = $results->projects;
 
 $see_more_btn_label = get_field('projects_see_more_btn_label');
 $see_less_btn_label = get_field('projects_see_less_btn_label');
 
 if ($projects->have_posts()) :
-
-    var_dump($projects->found_posts);
 
     ?>
 
@@ -34,7 +32,7 @@ if ($projects->have_posts()) :
                 <div id="loader" role="status" class="absolute inset-0 z-20 hidden">
                     <span class="lg:mt-12 flex items-center justify-center">
                         <span class="inline-block h-12 w-12 animate-spin rounded-full border-4 border-solid border-theme-dark border-r-transparent motion-reduce:animate-[spin_1.5s_linear_infinite] relative z-30"></span>
-                        <span class="sr-only"><?= __('Chargement...', 'nv_core'); ?></span>
+                        <span class="sr-only"><?= __('Chargement...', THEME_TEXT_DOMAIN); ?></span>
                     </span>
                 </div>
                 <div id="projects-container"
