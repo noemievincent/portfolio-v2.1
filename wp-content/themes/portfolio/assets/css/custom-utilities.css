@@ -10,4 +10,8 @@
     .ease-all {
         @apply transition-all duration-300 ease-in-out;
     }
+
+    .show-skiplinks {
+        @apply opacity-100 translate-y-0;
+    }
 }

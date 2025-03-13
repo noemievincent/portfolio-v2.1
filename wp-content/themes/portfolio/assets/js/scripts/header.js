@@ -1,6 +1,7 @@
 $(document).ready(function () {
     redirectToAnchor();
     toggleMenu();
+    hanldeScrollToTop();
 
     detectScroll();
     $(window).on('scroll', () => {
@@ -17,6 +18,7 @@ function detectScroll() {
     const scrollTop = $(window).scrollTop();
 
     $('header').toggleClass('scrolled', scrollTop > scrollTrigger);
+    $('#scroll-to-top').toggleClass('active', scrollTop > scrollTrigger * 4); //160
 
     // detectCurrentSection();
     setMarginTop();
@@ -52,11 +54,6 @@ function redirectToAnchor() {
 }
 
 function toggleMenu() {
-    // $('body').addClass('overflow-hidden');
-    //
-    // $('header').addClass('menu-opened');
-    // $('.burger-menu').addClass('close');
-
     $('#toggle-menu').on('change', (e) => {
         e.preventDefault();
         e.stopPropagation();
@@ -73,6 +70,13 @@ function toggleMenu() {
 
         $('header').removeClass('menu-opened');
         $('.burger-menu').removeClass('close');
+    });
+}
+
+function hanldeScrollToTop() {
+    $('#scroll-to-top').on('click', (e) => {
+        e.preventDefault();
+        window.scrollTo(0, 0);
     });
 }
 
@@ -100,3 +104,4 @@ function detectCurrentSection() {
         });
     }
 }
+

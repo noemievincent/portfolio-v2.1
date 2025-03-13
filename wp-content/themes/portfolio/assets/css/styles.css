@@ -8,6 +8,7 @@
 @import './custom-utilities.css';
 
 @import 'scss/fonts.scss';
+@import 'scss/accessibility.scss';
 @import 'scss/menu.scss';
 @import 'scss/lang-switcher.scss';
 @import 'scss/form.scss';

@@ -25,9 +25,11 @@ include get_theme_file_path() . '/inc/svg.php';
 
 ?>
 
-<header id="top"
-        class="flex-0 w-full z-50 text-lg lg:text-xl font-mono border-b-2 border-b-theme-dark top-0 <?= is_front_page() ? 'fixed' : 'sticky' ?>">
-    <div id="sub-header" class="px-default grid-default bg-theme-dark text-black py-2 lg:py-3 ease-all relative z-40">
+<?php get_template_part('template-parts/skiplinks'); ?>
+
+<header id="header"
+        class="flex-0 w-full z-40 text-lg lg:text-xl font-mono border-b-2 border-b-theme-dark top-0 <?= is_front_page() ? 'fixed' : 'sticky' ?>">
+    <div id="sub-header" class="px-default grid-default bg-theme-dark text-black py-2 lg:py-3 ease-all relative z-30">
         <div class="col-span-full lg:col-start-2 lg:col-span-10 2xl:col-start-3 2xl:col-span-8 flex justify-between">
             <ul class="flex items-center gap-2.5 lg:gap-3.5">
                 <?php if ($github) : ?>
@@ -86,6 +88,7 @@ include get_theme_file_path() . '/inc/svg.php';
                     <?php wp_nav_menu([
                         'theme_location' => 'header',
                         'container' => false,
+                        'menu_id' => 'menu',
                         'menu_class' => 'header-menu',
                     ]); ?>
                 </div>
@@ -95,4 +98,4 @@ include get_theme_file_path() . '/inc/svg.php';
     </div>
 </header>
 
-<main class="flex flex-col flex-grow">
+<main id="content" class="flex flex-col flex-grow">

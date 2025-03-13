@@ -57,7 +57,7 @@
 
       input:not([type='checkbox']),
       textarea {
-        @apply w-full h-11 p-2 border-2 border-black outline outline-1 outline-transparent resize-none ease-all;
+        @apply w-full h-11 p-2 border-2 border-black resize-none ease-all;
 
         &.wpcf7-not-valid {
           @apply border-error focus-visible:outline-error;
@@ -65,10 +65,6 @@
           + .wpcf7-not-valid-tip {
             @apply text-error pt-0.5 pl-0.5;
           }
-        }
-
-        &:focus {
-          @apply outline-black;
         }
       }
 

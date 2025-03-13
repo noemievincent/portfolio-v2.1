@@ -1,0 +1,19 @@
+.skiplinks {
+  @apply opacity-0 -translate-y-full ease-all duration-100;
+
+  a {
+    @apply underline;
+
+    &:hover, &:focus {
+      @apply text-theme-dark;
+    }
+  }
+}
+
+*:focus-visible {
+  @apply outline-dashed outline-2 outline-offset-4;
+}
+
+.project-card:focus-within {
+  @apply outline-dashed outline-2 outline-offset-4;
+}

@@ -124,3 +124,21 @@ footer {
     }
   }
 }
+
+#scroll-to-top {
+  @apply opacity-0 cursor-default ease-all;
+
+  .animate {
+    @apply max-w-0 opacity-0 ease-all
+  }
+
+  &.active {
+    @apply opacity-100 cursor-pointer;
+
+    &:hover {
+      .animate {
+        @apply max-w-[8em] opacity-100 mr-4.5;
+      }
+    }
+  }
+}
