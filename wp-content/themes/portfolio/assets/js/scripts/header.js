@@ -1,6 +1,8 @@
+import MenuHandler from './MenuHandler.js';
+
 $(document).ready(function () {
+    new MenuHandler();
     redirectToAnchor();
-    toggleMenu();
     hanldeScrollToTop();
 
     detectScroll();
@@ -53,25 +55,6 @@ function redirectToAnchor() {
     }
 }
 
-function toggleMenu() {
-    $('#toggle-menu').on('change', (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-
-        $('body').toggleClass('overflow-hidden');
-
-        $('header').toggleClass('menu-opened');
-        $('.burger-menu').toggleClass('close');
-    });
-
-    // Close burger menu on named anchor click
-    $('.header-menu .menu-item > a').on('click', (e) => {
-        $('body').removeClass('overflow-hidden');
-
-        $('header').removeClass('menu-opened');
-        $('.burger-menu').removeClass('close');
-    });
-}
 
 function hanldeScrollToTop() {
     $('#scroll-to-top').on('click', (e) => {

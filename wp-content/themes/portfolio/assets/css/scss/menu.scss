@@ -97,20 +97,6 @@ footer {
   .rgpd-menu {
     @apply font-light lg:text-lg flex max-lg:flex-col lg:items-center lg:justify-end gap-1 lg:gap-10;
 
-    a.old {
-      @apply relative;
-
-      &::after {
-        @apply content-[''] block bg-black absolute w-0 h-px right-0 ease-all;
-      }
-
-      &:hover, &:focus {
-        &::after {
-          @apply w-full left-0;
-        }
-      }
-    }
-
     a {
       @apply relative z-1;
 

@@ -61,7 +61,7 @@ include get_theme_file_path() . '/inc/svg.php';
         </div>
     </div>
     <div id="main-header" class="px-default grid-default bg-white/90 relative py-4 lg:py-8 ease-all">
-        <input id="toggle-menu" class="toggle-menu lg:hidden absolute opacity-0 sr-only" type="checkbox">
+        <input id="toggle-menu" tabindex="-1" class="toggle-menu lg:hidden absolute opacity-0 sr-only" type="checkbox">
         <div class="burger-container col-span-full lg:col-start-2 lg:col-span-1 2xl:col-start-3 flex items-center justify-between relative z-30">
             <a href="<?= home_url() ?>" class="w-fit h-fit inline-flex group">
                 <?php if (!empty($logos) && array_key_exists('logo', $logos)) : ?>
@@ -70,7 +70,7 @@ include get_theme_file_path() . '/inc/svg.php';
                 <?php endif; ?>
                 <span class="sr-only"><?= __('Retourner à l\'accueil', THEME_TEXT_DOMAIN); ?></span>
             </a>
-            <label for="toggle-menu" id="menu-button" class="burger-menu lg:hidden w-8 h-5 cursor-pointer">
+            <label for="toggle-menu" id="burger-menu" class="burger-menu lg:hidden w-8 h-5 cursor-pointer" tabindex="0">
                     <span class="lines">
                         <span aria-hidden="true"
                               class="line-1 bg-black origin-top-right"></span>

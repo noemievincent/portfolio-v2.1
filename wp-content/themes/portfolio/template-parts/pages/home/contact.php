@@ -11,7 +11,7 @@ $linkedin = get_field('core_socials_linkedin', 'options');
 ?>
 
 <section id="<?= $section_id ?>" aria-labelledby="<?= $section_id ?>-title"
-         class="page-section relative grid-default px-default bg-theme-light py-12 pb-36 lg:py-16 lg:pb-48 gap-y-12">
+         class="page-section relative grid-default px-default bg-theme-light py-12 pb-24 lg:py-16 lg:pb-48 gap-y-12">
     <div class="col-span-full lg:col-start-2 lg:col-span-3 2xl:col-start-3 2xl:col-span-2 flex flex-col gap-10 lg:gap-16 relative z-1">
         <h2 id="<?= $section_id ?>-title"
             class="relative z-1 font-mono text-3xl lg:text-4.5xl w-fit inline-flex flex-col max-lg:items-center max-lg:self-center gap-6 lg:gap-12 after:bg-black after:h-0.5 after:w-[40%]">
@@ -87,7 +87,7 @@ $linkedin = get_field('core_socials_linkedin', 'options');
         <div class="cf7-form">
             <?= do_shortcode('[contact-form-7 id="3da538d" title="Formulaire de contact"]') ?>
         </div>
-        <svg class="fill-theme aspect-[1.50] lg:w-[220px] absolute -z-1 rotate-[154deg] lg:-bottom-24 lg:-right-20">
+        <svg class="fill-theme aspect-[1.50] w-[180px] lg:w-[220px] absolute -z-1 rotate-[154deg] -bottom-20 right-4 lg:-bottom-24 lg:-right-20">
             <use xlink:href="#bubbles-2"></use>
         </svg>
     </div>
