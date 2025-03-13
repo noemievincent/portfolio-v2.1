@@ -1,0 +1,356 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Portfolio\n"
+"POT-Creation-Date: 2025-03-13 19:39+0100\n"
+"PO-Revision-Date: 2025-03-13 19:39+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_BE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+"X-Poedit-SearchPathExcluded-1: dist\n"
+
+#: 404.php:6
+msgid "Erreur 404"
+msgstr "Erreur 404"
+
+#: 404.php:13
+msgid "Oups !"
+msgstr "Oups !"
+
+#: 404.php:14
+msgid "Cette page n'a pas pu être trouvée."
+msgstr "Cette page n'a pas pu être trouvée."
+
+#: 404.php:18 header.php:69
+msgid "Retourner à l'accueil"
+msgstr "Retourner à l'accueil"
+
+#: footer.php:5
+msgid "Pied de page"
+msgstr "Pied de page"
+
+#: footer.php:8
+msgid "Noémie Vincent. Tous droits réservés."
+msgstr "Noémie Vincent. Tous droits réservés."
+
+#: header.php:37 header.php:41 template-parts/pages/home/contact.php:61
+#: template-parts/pages/home/contact.php:65
+msgid "Visiter mon profil GitHub"
+msgstr "Visiter mon profil GitHub"
+
+#: header.php:49 header.php:53 template-parts/pages/home/contact.php:74
+#: template-parts/pages/home/contact.php:78
+msgid "Visiter ma page Linkedin"
+msgstr "Visiter ma page Linkedin"
+
+#: header.php:79
+msgid "Ouvrir/fermer le menu"
+msgstr "Ouvrir/fermer le menu"
+
+#: inc/cpts.php:11 inc/cpts.php:18
+msgid "Projet"
+msgstr "Projet"
+
+#: inc/cpts.php:17 inc/cpts.php:19
+msgid "Projets"
+msgstr "Projets"
+
+#: inc/cpts.php:20
+#| msgid "Ajouter un terme"
+msgid "Ajouter un projet"
+msgstr "Ajouter un projet"
+
+#: inc/cpts.php:21
+#| msgid "Ajouter un nouveau service"
+msgid "Ajouter un nouveau projet"
+msgstr "Ajouter un nouveau projet"
+
+#: inc/cpts.php:22
+#| msgid "Nouveau terme"
+msgid "Nouveau projet"
+msgstr "Nouveau projet"
+
+#: inc/cpts.php:23
+#| msgid "Modifier le service"
+msgid "Modifier le projet"
+msgstr "Modifier le projet"
+
+#: inc/cpts.php:24
+#| msgid "Voir le terme"
+msgid "Voir le projet"
+msgstr "Voir le projet"
+
+#: inc/cpts.php:25
+#| msgid "Rechercher des services"
+msgid "Rechercher un projet"
+msgstr "Rechercher un projet"
+
+#: inc/cpts.php:26
+#| msgid "Aucun service trouvé."
+msgid "Aucun projet trouvé"
+msgstr "Aucun projet trouvé"
+
+#: inc/cpts.php:27
+#| msgid "Tous les termes"
+msgid "Tous les projets"
+msgstr "Tous les projets"
+
+#: inc/cpts.php:41
+msgid "Ajouter"
+msgstr "Ajouter"
+
+#: inc/cpts.php:42
+msgid "Ajouter un nouvel élément"
+msgstr "Ajouter un nouvel élément"
+
+#: inc/cpts.php:43
+msgid "Modifier l'élément"
+msgstr "Modifier l'élément"
+
+#: inc/cpts.php:44
+msgid "Nouvel élément"
+msgstr "Nouvel élément"
+
+#: inc/cpts.php:45
+msgid "Voir l'élément"
+msgstr "Voir l'élément"
+
+#: inc/cpts.php:46
+msgid "Voir les éléments"
+msgstr "Voir les éléments"
+
+#: inc/cpts.php:47
+msgid "Rechercher des éléments"
+msgstr "Rechercher des éléments"
+
+#: inc/cpts.php:48
+msgid "Aucun élément trouvé."
+msgstr "Aucun élément trouvé."
+
+#: inc/cpts.php:49
+msgid "Aucun élément trouvé dans la corbeille."
+msgstr "Aucun élément trouvé dans la corbeille."
+
+#: inc/cpts.php:50
+msgid "Tous les éléments"
+msgstr "Tous les éléments"
+
+#: inc/cpts.php:81
+msgid "Rechercher parmi les termes"
+msgstr "Rechercher parmi les termes"
+
+#: inc/cpts.php:82
+msgid "Termes les plus utilisés"
+msgstr "Termes les plus utilisés"
+
+#: inc/cpts.php:83
+msgid "Tous les termes"
+msgstr "Tous les termes"
+
+#: inc/cpts.php:84
+msgid "Éditer le terme"
+msgstr "Éditer le terme"
+
+#: inc/cpts.php:85
+msgid "Voir le terme"
+msgstr "Voir le terme"
+
+#: inc/cpts.php:86
+msgid "Mettre à jour le terme"
+msgstr "Mettre à jour le terme"
+
+#: inc/cpts.php:87
+msgid "Ajouter un terme"
+msgstr "Ajouter un terme"
+
+#: inc/cpts.php:88
+msgid "Nouveau terme"
+msgstr "Nouveau terme"
+
+#: page-templates/page-rgpd.php:41 page.php:11
+#: template-parts/pages/single-project/introduction.php:33
+msgid "Contenu à venir"
+msgstr "Contenu à venir"
+
+#: template-parts/cards/project.php:30
+msgid "En savoir plus sur ce projet"
+msgstr "En savoir plus sur ce projet"
+
+#: template-parts/custom-theme-switcher.php:8
+msgid "Changer le thème en rose"
+msgstr "Changer le thème en rose"
+
+#: template-parts/custom-theme-switcher.php:13
+msgid "Changer le thème en vert"
+msgstr "Changer le thème en vert"
+
+#: template-parts/custom-theme-switcher.php:18
+msgid "Changer le thème en bleu"
+msgstr "Changer le thème en bleu"
+
+#: template-parts/custom_next_post_link.php:3
+msgid "Projet suivant"
+msgstr "Projet suivant"
+
+#: template-parts/pages/home/projects.php:35
+msgid "Chargement..."
+msgstr "Chargement..."
+
+#: template-parts/pages/single-project/gallery.php:11
+msgid "Galerie d'images"
+msgstr "Galerie d'images"
+
+#: template-parts/pages/single-project/introduction.php:41
+#| msgid "Voir le service"
+msgid "Voir le site"
+msgstr "Voir le site"
+
+#: template-parts/pages/single-project/introduction.php:54
+msgid "Consulter le repo GitHub"
+msgstr "Consulter le repo GitHub"
+
+#: template-parts/pages/single-project/introduction.php:59
+msgid "GitHub"
+msgstr "GitHub"
+
+#: template-parts/pages/single-project/introduction.php:73
+msgid "Palette de couleurs"
+msgstr "Palette de couleurs"
+
+#~ msgid "Service"
+#~ msgstr "Service"
+
+#~ msgid "Services"
+#~ msgstr "Services"
+
+#~ msgid "Nouveau service"
+#~ msgstr "Nouveau service"
+
+#~| msgid "Voir le service"
+#~ msgid "Voir les services"
+#~ msgstr "Voir les services"
+
+#~| msgid "Aucun service trouvé"
+#~ msgid "Aucun service trouvé dans la corbeille."
+#~ msgstr "Aucun service trouvé dans la corbeille."
+
+#~ msgid "Tous les services"
+#~ msgstr "Tous les services"
+
+#~ msgid "Gamme"
+#~ msgstr "Gamme"
+
+#~ msgid "Gammes"
+#~ msgstr "Gammes"
+
+#~| msgid "Tous les termes"
+#~ msgid "Toutes les gammes"
+#~ msgstr "Toutes les gammes"
+
+#~| msgid "Éditer le terme"
+#~ msgid "Éditer la gamme"
+#~ msgstr "Éditer la gamme"
+
+#~| msgid "Voir le terme"
+#~ msgid "Voir la gamme"
+#~ msgstr "Voir la gamme"
+
+#~| msgid "Mettre à jour le terme"
+#~ msgid "Mettre à jour la gamme"
+#~ msgstr "Mettre à jour la gamme"
+
+#~| msgid "Ajouter un terme"
+#~ msgid "Ajouter une gamme"
+#~ msgstr "Ajouter une gamme"
+
+#~| msgid "Nouvel élément"
+#~ msgid "Nouvelle gamme"
+#~ msgstr "Nouvelle gamme"
+
+#~| msgid "Rechercher parmi les termes"
+#~ msgid "Rechercher parmi les gammes"
+#~ msgstr "Rechercher parmi les gammes"
+
+#~| msgid "Termes les plus utilisés"
+#~ msgid "Gammes les plus utilisées"
+#~ msgstr "Gammes les plus utilisées"
+
+#~| msgid "Tous les éléments"
+#~ msgid "Archives des éléments"
+#~ msgstr "Archives des éléments"
+
+#~| msgid "Tous les éléments"
+#~ msgid "Attributs de l'élément"
+#~ msgstr "Attributs de l'élément"
+
+#~| msgid "Voir l'élément"
+#~ msgid "Insérer dans l'élément"
+#~ msgstr "Insérer dans l'élément"
+
+#~ msgid "Téléversé dans cet élément"
+#~ msgstr "Téléversé dans cet élément"
+
+#~ msgid "Image mise en avant"
+#~ msgstr "Image mise en avant"
+
+#~ msgid "Définir l'image mise en avant"
+#~ msgstr "Définir l'image mise en avant"
+
+#~ msgid "Supprimer l'image mise en avant"
+#~ msgstr "Supprimer l'image mise en avant"
+
+#~ msgid "Utiliser comme image mise en avant"
+#~ msgstr "Utiliser comme image mise en avant"
+
+#~| msgid "Tous les éléments"
+#~ msgid "Filtrer la liste des éléments"
+#~ msgstr "Filtrer la liste des éléments"
+
+#~ msgid "Filtrer par date"
+#~ msgstr "Filtrer par date"
+
+#~ msgid "Navigation dans la liste des éléments"
+#~ msgstr "Navigation dans la liste des éléments"
+
+#~| msgid "Tous les éléments"
+#~ msgid "Liste des éléments"
+#~ msgstr "Liste des éléments"
+
+#~ msgid "Élément publié."
+#~ msgstr "Élément publié."
+
+#~ msgid "Élément publié en privé."
+#~ msgstr "Élément publié en privé."
+
+#~ msgid "Élément remis en brouillon."
+#~ msgstr "Élément remis en brouillon."
+
+#~ msgid "Élément mis à la corbeille."
+#~ msgstr "Élément mis à la corbeille."
+
+#~ msgid "Élément planifié."
+#~ msgstr "Élément planifié."
+
+#~ msgid "Élément mis à jour."
+#~ msgstr "Élément mis à jour."
+
+#~| msgid "Voir l'élément"
+#~ msgid "Lien de l'élément"
+#~ msgstr "Lien de l'élément"
+
+#~| msgid "Modifier un élément"
+#~ msgid "Un lien vers un élément . "
+#~ msgstr "Un lien vers un élément . "
+
+#~ msgid "Ajouter un service"
+#~ msgstr "Ajouter un service"
+
+#~ msgid "Ajouter un élément"
+#~ msgstr "Ajouter un élément"

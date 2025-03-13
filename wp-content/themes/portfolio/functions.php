@@ -22,6 +22,8 @@ add_action('after_setup_theme', 'theme_core_setup');
 
 function theme_core_setup()
 {
+    load_theme_textdomain(THEME_TEXT_DOMAIN, __DIR__ . '/languages');
+    
     add_theme_support('menus');
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');

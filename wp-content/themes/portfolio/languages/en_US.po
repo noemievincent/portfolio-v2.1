@@ -1,0 +1,339 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Portfolio\n"
+"POT-Creation-Date: 2025-03-13 19:39+0100\n"
+"PO-Revision-Date: 2025-03-13 19:46+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+"X-Poedit-SearchPathExcluded-1: dist\n"
+
+#: 404.php:6
+msgid "Erreur 404"
+msgstr "Error 404"
+
+#: 404.php:13
+msgid "Oups !"
+msgstr "Oops!"
+
+#: 404.php:14
+msgid "Cette page n'a pas pu être trouvée."
+msgstr "This page could not be found."
+
+#: 404.php:18 header.php:69
+msgid "Retourner à l'accueil"
+msgstr "Back to homepage"
+
+#: footer.php:5
+msgid "Pied de page"
+msgstr "Footer"
+
+#: footer.php:8
+msgid "Noémie Vincent. Tous droits réservés."
+msgstr "Noémie Vincent. All rights reserved."
+
+#: header.php:37 header.php:41 template-parts/pages/home/contact.php:61
+#: template-parts/pages/home/contact.php:65
+msgid "Visiter mon profil GitHub"
+msgstr "Visit my GitHub profile"
+
+#: header.php:49 header.php:53 template-parts/pages/home/contact.php:74
+#: template-parts/pages/home/contact.php:78
+msgid "Visiter ma page Linkedin"
+msgstr "Visit my Linkedin page"
+
+#: header.php:79
+msgid "Ouvrir/fermer le menu"
+msgstr "Open/close menu"
+
+#: inc/cpts.php:11 inc/cpts.php:18
+msgid "Projet"
+msgstr "Project"
+
+#: inc/cpts.php:17 inc/cpts.php:19
+msgid "Projets"
+msgstr "Projects"
+
+#: inc/cpts.php:20
+#| msgid "Ajouter un terme"
+msgid "Ajouter un projet"
+msgstr "Add project"
+
+#: inc/cpts.php:21
+#| msgid "Ajouter un nouveau service"
+msgid "Ajouter un nouveau projet"
+msgstr "Add new project"
+
+#: inc/cpts.php:22
+#| msgid "Nouveau terme"
+msgid "Nouveau projet"
+msgstr "New project"
+
+#: inc/cpts.php:23
+#| msgid "Modifier le service"
+msgid "Modifier le projet"
+msgstr "Edit project"
+
+#: inc/cpts.php:24
+#| msgid "Voir le terme"
+msgid "Voir le projet"
+msgstr "View project"
+
+#: inc/cpts.php:25
+#| msgid "Rechercher des services"
+msgid "Rechercher un projet"
+msgstr "Search projects"
+
+#: inc/cpts.php:26
+#| msgid "Aucun service trouvé."
+msgid "Aucun projet trouvé"
+msgstr "No projects found"
+
+#: inc/cpts.php:27
+#| msgid "Tous les termes"
+msgid "Tous les projets"
+msgstr "All projects"
+
+#: inc/cpts.php:41
+msgid "Ajouter"
+msgstr "Add new"
+
+#: inc/cpts.php:42
+msgid "Ajouter un nouvel élément"
+msgstr "Add new element"
+
+#: inc/cpts.php:43
+msgid "Modifier l'élément"
+msgstr "Edit element"
+
+#: inc/cpts.php:44
+msgid "Nouvel élément"
+msgstr "New item"
+
+#: inc/cpts.php:45
+msgid "Voir l'élément"
+msgstr "View item"
+
+#: inc/cpts.php:46
+msgid "Voir les éléments"
+msgstr "View items"
+
+#: inc/cpts.php:47
+msgid "Rechercher des éléments"
+msgstr "Search items"
+
+#: inc/cpts.php:48
+msgid "Aucun élément trouvé."
+msgstr "No items found."
+
+#: inc/cpts.php:49
+msgid "Aucun élément trouvé dans la corbeille."
+msgstr "No items found in trash."
+
+#: inc/cpts.php:50
+msgid "Tous les éléments"
+msgstr "All items"
+
+#: inc/cpts.php:81
+msgid "Rechercher parmi les termes"
+msgstr "Search terms"
+
+#: inc/cpts.php:82
+msgid "Termes les plus utilisés"
+msgstr "Popular terms"
+
+#: inc/cpts.php:83
+msgid "Tous les termes"
+msgstr "All terms"
+
+#: inc/cpts.php:84
+msgid "Éditer le terme"
+msgstr "Edit term"
+
+#: inc/cpts.php:85
+msgid "Voir le terme"
+msgstr "View term"
+
+#: inc/cpts.php:86
+msgid "Mettre à jour le terme"
+msgstr "Update term"
+
+#: inc/cpts.php:87
+msgid "Ajouter un terme"
+msgstr "Add term"
+
+#: inc/cpts.php:88
+msgid "Nouveau terme"
+msgstr "New term"
+
+#: page-templates/page-rgpd.php:41 page.php:11
+#: template-parts/pages/single-project/introduction.php:33
+msgid "Contenu à venir"
+msgstr "Coming soon"
+
+#: template-parts/cards/project.php:30
+msgid "En savoir plus sur ce projet"
+msgstr "Learn more about this project"
+
+#: template-parts/custom-theme-switcher.php:8
+msgid "Changer le thème en rose"
+msgstr "Change theme to pink"
+
+#: template-parts/custom-theme-switcher.php:13
+msgid "Changer le thème en vert"
+msgstr "Change theme to green"
+
+#: template-parts/custom-theme-switcher.php:18
+msgid "Changer le thème en bleu"
+msgstr "Change theme to blue"
+
+#: template-parts/custom_next_post_link.php:3
+msgid "Projet suivant"
+msgstr "Next project"
+
+#: template-parts/pages/home/projects.php:35
+msgid "Chargement..."
+msgstr "Loading…"
+
+#: template-parts/pages/single-project/gallery.php:11
+msgid "Galerie d'images"
+msgstr "Image gallery"
+
+#: template-parts/pages/single-project/introduction.php:41
+#| msgid "Voir le service"
+msgid "Voir le site"
+msgstr "See live"
+
+#: template-parts/pages/single-project/introduction.php:54
+msgid "Consulter le repo GitHub"
+msgstr "Check out GitHub repo"
+
+#: template-parts/pages/single-project/introduction.php:59
+msgid "GitHub"
+msgstr "GitHub"
+
+#: template-parts/pages/single-project/introduction.php:73
+msgid "Palette de couleurs"
+msgstr "Color palette"
+
+#~ msgid "Service"
+#~ msgstr "Service"
+
+#~ msgid "Services"
+#~ msgstr "Services"
+
+#~ msgid "Nouveau service"
+#~ msgstr "New service"
+
+#~ msgid "Voir les services"
+#~ msgstr "View services"
+
+#~ msgid "Aucun service trouvé dans la corbeille."
+#~ msgstr "No services found in trash."
+
+#~ msgid "Tous les services"
+#~ msgstr "All services"
+
+#~ msgid "Gamme"
+#~ msgstr "Range"
+
+#~ msgid "Gammes"
+#~ msgstr "Ranges"
+
+#~ msgid "Toutes les gammes"
+#~ msgstr "All ranges"
+
+#~ msgid "Éditer la gamme"
+#~ msgstr "Edit range"
+
+#~ msgid "Voir la gamme"
+#~ msgstr "View range"
+
+#~ msgid "Mettre à jour la gamme"
+#~ msgstr "Update range"
+
+#~ msgid "Ajouter une gamme"
+#~ msgstr "Add range"
+
+#~ msgid "Nouvelle gamme"
+#~ msgstr "New range"
+
+#~ msgid "Rechercher parmi les gammes"
+#~ msgstr "Search ranges"
+
+#~ msgid "Gammes les plus utilisées"
+#~ msgstr "Popular ranges"
+
+#~ msgid "Image mise en avant"
+#~ msgstr "Featured image"
+
+#~ msgid "Définir l'image mise en avant"
+#~ msgstr "Set featured image"
+
+#~ msgid "Supprimer l'image mise en avant"
+#~ msgstr "Supprimer l'image mise en avant"
+
+#~ msgid "Utiliser comme image mise en avant"
+#~ msgstr "Utiliser comme image mise en avant"
+
+#~ msgid "Insérer dans l'élément"
+#~ msgstr "Insérer dans l'élément"
+
+#~ msgid "Téléversé dans cet élément"
+#~ msgstr "Téléversé dans cet élément"
+
+#~ msgid "Archives des éléments"
+#~ msgstr "Item archive"
+
+#~ msgid "Attributs de l'élément"
+#~ msgstr "Attributs de l'élément"
+
+#~ msgid "Filtrer la liste des éléments"
+#~ msgstr "Filtrer la liste des éléments"
+
+#~ msgid "Filtrer par date"
+#~ msgstr "Filtrer par date"
+
+#~ msgid "Navigation dans la liste des éléments"
+#~ msgstr "Navigation dans la liste des éléments"
+
+#~ msgid "Liste des éléments"
+#~ msgstr "Liste des éléments"
+
+#~ msgid "Élément publié."
+#~ msgstr "Élément publié."
+
+#~ msgid "Élément publié en privé."
+#~ msgstr "Élément publié en privé."
+
+#~ msgid "Élément remis en brouillon."
+#~ msgstr "Élément remis en brouillon."
+
+#~ msgid "Élément mis à la corbeille."
+#~ msgstr "Élément mis à la corbeille."
+
+#~ msgid "Élément planifié."
+#~ msgstr "Élément planifié."
+
+#~ msgid "Élément mis à jour."
+#~ msgstr "Élément mis à jour."
+
+#~ msgid "Lien de l'élément"
+#~ msgstr "Lien de l'élément"
+
+#~ msgid "Un lien vers un élément . "
+#~ msgstr "Un lien vers un élément . "
+
+#~ msgid "Ajouter un service"
+#~ msgstr "Add service"
+
+#~ msgid "Ajouter un élément"
+#~ msgstr "Add item"

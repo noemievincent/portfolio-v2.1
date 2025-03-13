@@ -30,20 +30,23 @@ $cpt_project = [
     'publicly_queryable' => true,
 ];
 
-function register_custom_post_type($post_type)
+function register_custom_post_type($post_type): void
 {
     $name = $post_type['name'];
     $labels = $post_type['labels'] ?? [
         'name' => $name . 's',
         'singular_name' => $name,
         'menu_name' => $name . 's',
-        'add_new' => __('Ajouter un élément', THEME_TEXT_DOMAIN),
+        'name_admin_bar' => $name . 's',
+        'add_new' => __('Ajouter', THEME_TEXT_DOMAIN),
         'add_new_item' => __('Ajouter un nouvel élément', THEME_TEXT_DOMAIN),
+        'edit_item' => __('Modifier l\'élément', THEME_TEXT_DOMAIN),
         'new_item' => __('Nouvel élément', THEME_TEXT_DOMAIN),
-        'edit_item' => __('Modifier un élément', THEME_TEXT_DOMAIN),
         'view_item' => __('Voir l\'élément', THEME_TEXT_DOMAIN),
-        'search_items' => __('Rechercher un élément', THEME_TEXT_DOMAIN),
-        'not_found' => __('Aucun élément trouvé', THEME_TEXT_DOMAIN),
+        'view_items' => __('Voir les éléments', THEME_TEXT_DOMAIN),
+        'search_items' => __('Rechercher des éléments', THEME_TEXT_DOMAIN),
+        'not_found' => __('Aucun élément trouvé.', THEME_TEXT_DOMAIN),
+        'not_found_in_trash' => __('Aucun élément trouvé dans la corbeille.', THEME_TEXT_DOMAIN),
         'all_items' => __('Tous les éléments', THEME_TEXT_DOMAIN),
     ];
 
@@ -75,21 +78,21 @@ function register_custom_post_type($post_type)
                 [
                     'name' => $t_name . 's',
                     'singular_name' => $t_name,
+                    'search_items' => __('Rechercher parmi les termes', THEME_TEXT_DOMAIN),
+                    'popular_items' => __('Termes les plus utilisés', THEME_TEXT_DOMAIN),
                     'all_items' => __('Tous les termes', THEME_TEXT_DOMAIN),
                     'edit_item' => __('Éditer le terme', THEME_TEXT_DOMAIN),
                     'view_item' => __('Voir le terme', THEME_TEXT_DOMAIN),
                     'update_item' => __('Mettre à jour le terme', THEME_TEXT_DOMAIN),
                     'add_new_item' => __('Ajouter un terme', THEME_TEXT_DOMAIN),
                     'new_item_name' => __('Nouveau terme', THEME_TEXT_DOMAIN),
-                    'search_items' => __('Rechercher parmi les termes', THEME_TEXT_DOMAIN),
-                    'popular_items' => __('Termes les plus utilisés', THEME_TEXT_DOMAIN),
                 ];
 
             $t_args = [
                 'label' => $t_name,
                 'labels' => $t_labels,
-                'show_admin_column' => true,
                 'hierarchical' => $taxonomy['hierarchical'] ?? true,
+                'show_admin_column' => true,
             ];
 
             if (array_key_exists('hide_meta_box', $taxonomy)) {

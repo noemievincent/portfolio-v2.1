@@ -20,7 +20,7 @@ $url = get_the_permalink();
         <?php endif; ?>
     </div>
     <div class="flex flex-col gap-2.5">
-        <h2 id="<?= sanitize_title($title) ?>" class="font-mono text-2xl"><?= $title ?></h2>
+        <h3 id="<?= sanitize_title($title) ?>" class="font-mono text-2xl"><?= $title ?></h3>
         <?php if ($excerpt) : ?>
             <p class="line-clamp-3 font-light text-lg"><?= $excerpt ?></p>
         <?php endif; ?>

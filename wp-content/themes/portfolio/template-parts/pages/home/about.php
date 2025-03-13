@@ -29,14 +29,16 @@ $btn_2 = get_field('about_btn_2');
         <?php if ($btn_1 || $btn_2) : ?>
             <div class="flex items-center max-lg:justify-center flex-wrap gap-6 lg:gap-14">
                 <?php if ($btn_1) : ?>
-                    <a href="<?= $btn_1['url'] ?>" target="<?= $btn_1['target'] ?>" class="btn-primary max-lg:w-full">
+                    <a href="<?= $btn_1['url'] ?>" <?= $btn_1['target'] == '_blank' ? 'target="_blank"' : '' ?>
+                       class="btn-primary max-lg:w-full">
                         <span class="top">
                             <?= $btn_1['title'] ?>
                         </span>
                     </a>
                 <?php endif; ?>
                 <?php if ($btn_2) : ?>
-                    <a href="<?= $btn_2['url'] ?>" target="<?= $btn_2['target'] ?>" class="btn-secondary">
+                    <a href="<?= $btn_2['url'] ?>" <?= $btn_2['target'] == '_blank' ? 'target="_blank"' : '' ?>
+                       class="btn-secondary">
                         <?= $btn_2['title'] ?>
                     </a>
                 <?php endif; ?>

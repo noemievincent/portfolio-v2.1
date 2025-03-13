@@ -15,7 +15,8 @@ $btn = get_field('single_project_contact_btn', 'options');
             <?php endif; ?>
         </div>
         <?php if ($btn) : ?>
-            <a href="<?= $btn['url'] ?>" target="<?= $btn['target'] ?>" class="btn-primary max-lg:w-full">
+            <a href="<?= $btn['url'] ?>" <?= $btn['target'] == '_blank' ? 'target="_blank"' : '' ?>
+               class="btn-primary max-lg:w-full">
                 <span class="top">
                     <?= $btn['title'] ?>
                 </span>
