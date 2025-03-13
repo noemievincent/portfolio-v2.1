@@ -1,2 +1,4 @@
 underline
 italic
+
+pointer-events-none opacity-20

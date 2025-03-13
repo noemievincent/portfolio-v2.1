@@ -35,13 +35,18 @@ function setMarginTop() {
 
 function redirectToAnchor() {
     if ($('body').hasClass('home')) {
-        $('.header-menu .menu-item').on('click', (e) => {
-            if ($(e.currentTarget).hasClass('current_page_item')) {
-                e.preventDefault();
-                window.scrollTo(0, 0);
-
-                location.hash = '';
+        $('.header-menu .menu-item').each((i, link) => {
+            if ($(link).hasClass('menu-item-object-custom')) {
+                const href = $(link).find('a').attr('href');
+                $(link).find('a').attr('href', href.replace('/', ''));
             }
+        });
+
+        $('.header-menu .menu-item.current_page_item').on('click', (e) => {
+            e.preventDefault();
+            window.scrollTo(0, 0);
+
+            location.hash = '';
         });
     }
 }

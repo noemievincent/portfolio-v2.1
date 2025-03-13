@@ -39,14 +39,12 @@ if ($projects->have_posts()) :
                 </div>
                 <div id="projects-container"
                      class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-
                     <?php while ($projects->have_posts()) : $projects->the_post();
                         get_template_part('template-parts/cards/project');
                     endwhile;
                     wp_reset_postdata(); ?>
                 </div>
             </div>
-
             <?php if ($projects->found_posts > $initial_items_count) : ?>
                 <div class="relative z-1 mx-auto mt-4 lg:mt-6">
                     <button id="load-more-btn" data-initial-count="<?= $initial_items_count ?>"

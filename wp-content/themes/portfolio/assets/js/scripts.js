@@ -1,8 +1,8 @@
 import "./jquery-global";
 
 import './scripts/header';
-import './scripts/switch-theme';
-import './scripts/load-more-projects';
+import './scripts/ThemeSwitcher';
+import './scripts/ProjectsLoader';
 
 $(document).ready(function () {
   if ($('#dev-container').length) {
