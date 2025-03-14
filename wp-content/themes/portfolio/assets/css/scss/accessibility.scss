@@ -11,7 +11,7 @@
 }
 
 *:focus-visible {
-  @apply outline-dashed outline-2 outline-offset-4;
+  @apply outline-dashed outline-2 outline-offset-4 outline-theme-dark;
 }
 
 .project-card:focus-within {

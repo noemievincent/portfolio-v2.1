@@ -9,19 +9,19 @@ if ($is_policy) {
 ?>
 
     <div id="rgpd-page"
-         class="grid-default px-default flex-grow py-10 pt-18 lg:py-24 lg:pt-32">
+         class="grid-default px-default flex-grow py-10 pt-18 rl:py-16 rl:pt-24 lg:py-24 lg:pt-32">
         <?php if ($is_policy) : ?>
             <?php if ($rgpd_pages->have_posts()) : ?>
-                <div class="col-span-full lg:col-start-4 lg:col-span-6 2xl:col-start-5 2xl:col-span-4 flex flex-col gap-5 lg:gap-14">
+                <div class="col-span-full rg:col-start-2 rg:col-span-6 rl:col-start-3 rl:col-span-8 lg:col-start-4 lg:col-span-6 2xl:col-start-5 2xl:col-span-4 flex flex-col gap-5 rl:gap-12 lg:gap-14">
                     <?= get_template_part('template-parts/title-with-bubbles') ?>
-                    <ul class="relative lg:text-2xl divide-theme-light flex flex-col items-center text-xl text-center divide-y ">
+                    <ul class="relative text-lg md:text-xl rg:text-2xl divide-theme-light flex flex-col items-center text-center divide-y">
                         <?php while ($rgpd_pages->have_posts()) : $rgpd_pages->the_post(); ?>
                             <li class="flex items-center w-full">
                                 <a href="<?= get_the_permalink() ?>"
-                                   class="group ease-all flex items-center before:content-none hover px-3 hover:text-theme-dark focus:text-theme-dark justify-between lg:py-6 lg:px-5 py-3.5 w-full no-underline">
+                                   class="group ease-all flex items-center before:content-none hover hover:text-theme-dark focus:text-theme-dark justify-between rg:py-6 rg:px-5 py-3.5 md:px-3 md:py-4.5 w-full no-underline">
                                     <span><?= get_the_title(); ?></span>
-                                    <span class="border-theme-dark ease-all group-hover:bg-theme-dark group-focus:bg-theme-dark shrink-0 lg:w-12 lg:h-12 flex items-center justify-center w-10 h-10 bg-transparent border rounded-full">
-                                    <svg class="fill-theme-dark ease-all group-hover:fill-white w-3.5 h-3.5 lg:w-4 lg:h-4 ml-0.5">
+                                    <span class="border-theme-dark fill-theme-dark group-hover:fill-white ease-all group-hover:bg-theme-dark group-focus:bg-theme-dark shrink-0 aspect-square w-8 md:w-10 rg:w-12 flex items-center justify-center bg-transparent border rounded-full">
+                                    <svg class="shrink-0 w-3 h-3 md:w-3.5 md:h-3.5 rg:w-4 rg:h-4 ml-0.5">
                                         <use xlink:href="#arrow"></use>
                                     </svg>
                                 </span>
@@ -32,7 +32,7 @@ if ($is_policy) {
                 </div>
             <?php endif; ?>
         <?php else : ?>
-            <div class="col-span-full lg:col-start-4 lg:col-span-6 2xl:col-start-5 2xl:col-span-4 flex flex-col gap-8">
+            <div class="col-span-full rg:col-start-2 rg:col-span-6 rl:col-start-3 rl:col-span-8 lg:col-start-4 lg:col-span-6 2xl:col-start-5 2xl:col-span-4 flex flex-col gap-8">
                 <?= get_template_part('template-parts/title-with-bubbles') ?>
                 <div class="text-content">
                     <?php if ($content = get_the_content()) : ?>

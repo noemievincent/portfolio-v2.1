@@ -11,18 +11,18 @@ $linkedin = get_field('core_socials_linkedin', 'options');
 ?>
 
 <section id="<?= $section_id ?>" aria-labelledby="<?= $section_id ?>-title"
-         class="page-section relative grid-default px-default bg-theme-light py-12 pb-24 lg:py-16 lg:pb-48 gap-y-12">
-    <div class="col-span-full lg:col-start-2 lg:col-span-3 2xl:col-start-3 2xl:col-span-2 flex flex-col gap-10 lg:gap-16 relative z-1">
+         class="page-section relative grid-default px-default bg-theme-light py-12 pb-24 lg:py-16 lg:pb-48 gap-y-8 rg:gap-y-12">
+    <div class="col-span-full rg:col-start-1 rg:col-span-3 rl:col-start-1 rl:col-span-4 lg:col-start-2 lg:col-span-3 2xl:col-start-3 2xl:col-span-2 flex flex-col gap-10 lg:gap-16 relative z-1">
         <h2 id="<?= $section_id ?>-title"
-            class="relative z-1 font-mono text-3xl lg:text-4.5xl w-fit inline-flex flex-col max-lg:items-center max-lg:self-center gap-6 lg:gap-12 after:bg-black after:h-0.5 after:w-[40%]">
+            class="relative z-1 font-mono text-3xl rl:text-4xl lg:text-4.5xl w-fit inline-flex flex-col max-rg:items-center max-rg:self-center gap-6 lg:gap-12 after:bg-black after:h-0.5 after:w-[40%]">
             <span><?= $section_title ?></span>
             <svg class="fill-theme aspect-square w-[120px] -top-10 -left-6 lg:w-[220px] absolute -z-1 lg:-top-24 lg:-left-32">
                 <use xlink:href="#bubbles-1"></use>
             </svg>
         </h2>
-        <div class="flex flex-wrap justify-between lg:flex-col lg:gap-24">
+        <div class="flex flex-wrap justify-between lg:flex-col gap-6 rg:gap-14 lg:gap-24">
             <?php if ($email || $phone) : ?>
-                <ul class="flex flex-col gap-2.5 lg:gap-3 font-light text-lg">
+                <ul class="flex flex-col gap-2.5 rl:gap-3 font-light text-lg">
                     <?php if ($email) : ?>
                         <li>
                             <a href="mailto:<?= $email ?>" target="_blank"
@@ -53,7 +53,7 @@ $linkedin = get_field('core_socials_linkedin', 'options');
                 </ul>
             <?php endif; ?>
             <?php if ($github || $linkedin) : ?>
-                <ul class="flex gap-2 lg:gap-3">
+                <ul class="flex gap-2 rl:gap-3">
                     <?php if ($github) : ?>
                         <li>
                             <a href="mailto:<?= $github ?>" target="_blank"
@@ -83,7 +83,7 @@ $linkedin = get_field('core_socials_linkedin', 'options');
             <?php endif; ?>
         </div>
     </div>
-    <div class="col-span-full lg:col-end-12 lg:col-span-5 2xl:col-end-11 2xl:col-span-4 relative z-1">
+    <div class="col-span-full rg:col-end-9 rg:col-span-4 rl:col-end-13 rl:col-span-6 lg:col-end-12 lg:col-span-5 2xl:col-end-11 2xl:col-span-4 relative z-1">
         <div class="cf7-form">
             <?= do_shortcode('[contact-form-7 id="3da538d" title="Formulaire de contact"]') ?>
         </div>
@@ -91,7 +91,7 @@ $linkedin = get_field('core_socials_linkedin', 'options');
             <use xlink:href="#bubbles-2"></use>
         </svg>
     </div>
-    <svg class="fill-theme-light aspect-[11.70] absolute inset-x-0 bottom-full">
+    <svg class="fill-theme-light aspect-[11.70] absolute inset-x-0 bottom-full w-full">
         <use xlink:href="#wave-2"></use>
     </svg>
 </section>

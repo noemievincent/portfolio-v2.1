@@ -4,7 +4,7 @@
     }
 
     .px-default {
-        @apply md:px-10 rl:px-14 xl:px-32 px-6;
+        @apply px-4 sm:px-6 md:px-10 rg:px-12 rl:px-14 xl:px-32;
     }
 
     .ease-all {

@@ -57,7 +57,7 @@
 
       input:not([type='checkbox']),
       textarea {
-        @apply w-full h-11 p-2 border-2 border-black resize-none ease-all;
+        @apply rounded-none w-full h-11 p-2 border-2 border-black resize-none ease-all outline-black;
 
         &.wpcf7-not-valid {
           @apply border-error focus-visible:outline-error;
@@ -73,7 +73,7 @@
       }
 
       .bottom-container {
-        @apply flex flex-col gap-6 items-end lg:gap-10;
+        @apply flex flex-col gap-6 items-end lg:gap-10 md:max-rg:flex-row md:max-rg:items-start;
 
         .wpcf7-form-control-wrap:has(.wpcf7-acceptance) {
           .wpcf7-list-item {

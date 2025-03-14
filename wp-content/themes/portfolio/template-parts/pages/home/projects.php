@@ -19,8 +19,8 @@ if ($projects->have_posts()) :
     ?>
 
     <section id="<?= $section_id ?>" aria-labelledby="<?= $section_id ?>-title"
-             class="page-section relative grid-default px-default bg-theme-lightest py-12 pb-36 lg:py-16 lg:pb-48 2xl:pb-80">
-        <div class="col-span-full lg:col-start-2 lg:col-span-10 2xl:col-start-3 2xl:col-span-8 flex flex-col gap-10 lg:gap-16">
+             class="page-section relative grid-default px-default bg-theme-lightest py-10 pb-28 rg:pb-36 lg:py-16 lg:pb-48 2xl:pb-80">
+        <div class="col-span-full lg:col-start-2 lg:col-span-10 2xl:col-start-3 2xl:col-span-8 flex flex-col gap-8 rg:gap-10 lg:gap-16">
             <h2 id="<?= $section_id ?>-title"
                 class="relative z-1 font-mono text-center text-3xl lg:text-5xl w-fit mx-auto">
                 <span><?= $section_title ?></span>
@@ -36,7 +36,7 @@ if ($projects->have_posts()) :
                     </span>
                 </div>
                 <div id="projects-container"
-                     class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                     class="grid grid-cols-1 md:grid-cols-2 rg:grid-cols-3 gap-6 rg:gap-4 lg:gap-8">
                     <?php while ($projects->have_posts()) : $projects->the_post();
                         get_template_part('template-parts/cards/project');
                     endwhile;
@@ -61,7 +61,7 @@ if ($projects->have_posts()) :
                 </div>
             <?php endif; ?>
         </div>
-        <svg class="fill-theme-lightest aspect-[11.70] absolute inset-x-0 bottom-full">
+        <svg class="fill-theme-lightest aspect-[11.70] absolute inset-x-0 bottom-full w-full">
             <use xlink:href="#wave-1"></use>
         </svg>
     </section>

@@ -1,25 +1,25 @@
 header {
   &.scrolled {
     #sub-header {
-      @apply py-1 lg:py-1.5
+      @apply py-1 rg:py-1.5
     }
 
     #main-header {
-      @apply py-2 lg:py-4;
+      @apply py-1 md:py-2 rl:py-4;
     }
   }
 
   &.menu-opened {
     #main-header {
       .header-mobile {
-        @apply max-lg:translate-y-0;
+        @apply max-rg:translate-y-0;
       }
     }
   }
 
   #main-header {
     .header-mobile {
-      @apply max-lg:-translate-y-[200vh] max-lg:duration-700 max-lg:transition-all max-lg:ease-in-out max-lg:fixed max-lg:z-10 max-lg:h-screen max-lg:overflow-auto max-lg:inset-x-0 max-lg:top-0 ;
+      @apply max-rg:-translate-y-[200vh] max-rg:duration-700 max-rg:transition-all max-rg:ease-in-out max-rg:fixed max-rg:z-10 max-rg:h-screen max-rg:overflow-auto max-rg:inset-x-0 max-rg:top-0 ;
     }
 
     .burger-menu {
@@ -57,7 +57,7 @@ header {
     }
 
     .header-menu {
-      @apply flex max-lg:flex-col items-center justify-center gap-10 lg:gap-12 max-lg:text-2xl;
+      @apply flex max-rg:flex-col items-center justify-center gap-10 lg:gap-12 max-rg:text-2xl;
 
       .menu-item {
         @apply relative flex items-center justify-center;
@@ -95,7 +95,7 @@ header {
 
 footer {
   .rgpd-menu {
-    @apply font-light lg:text-lg flex max-lg:flex-col lg:items-center lg:justify-end gap-1 lg:gap-10;
+    @apply font-light md:text-lg flex flex-wrap rg:items-center rg:justify-end gap-0.5 md:gap-6 lg:gap-10;
 
     a {
       @apply relative z-1;

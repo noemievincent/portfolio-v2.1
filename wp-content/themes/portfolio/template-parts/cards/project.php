@@ -9,7 +9,7 @@ $url = get_the_permalink();
 ?>
 
 <article aria-labelledby="<?= sanitize_title($title) ?>"
-         class="project-card group relative z-1 overflow-hidden bg-white border-2 border-theme-dark flex flex-col gap-6 lg:gap-8 p-6">
+         class="project-card group relative z-1 overflow-hidden bg-white border-2 border-theme-dark flex flex-col gap-4 rg:gap-6 lg:gap-8 p-4 rg:p-6">
     <div class="bg-theme-dark aspect-square w-full flex items-center justify-center">
         <?php if ($img_id = get_post_thumbnail_id()) : ?>
             <?= wp_get_attachment_image($img_id, 'medium_large', false, ['class' => 'h-full w-full object-cover ease-all group-hover:scale-[1.10] group-focus:scale-[1.10]']) ?>
@@ -19,10 +19,10 @@ $url = get_the_permalink();
             </svg>
         <?php endif; ?>
     </div>
-    <div class="flex flex-col gap-2.5">
-        <h3 id="<?= sanitize_title($title) ?>" class="font-mono text-2xl"><?= $title ?></h3>
+    <div class="flex flex-col gap-1.5 rg:gap-2.5">
+        <h3 id="<?= sanitize_title($title) ?>" class="font-mono text-1.5xl rg:text-2xl"><?= $title ?></h3>
         <?php if ($excerpt) : ?>
-            <p class="line-clamp-3 font-light text-lg"><?= $excerpt ?></p>
+            <p class="line-clamp-3 font-light rg:text-lg"><?= $excerpt ?></p>
         <?php endif; ?>
     </div>
     <a href="<?= $url ?>"

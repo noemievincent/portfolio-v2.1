@@ -15,7 +15,7 @@ export default class MenuHandler {
 
     // Function to check if we're in mobile mode (adjust breakpoint if needed)
     isMobile() {
-        return window.innerWidth < 1920; // Matches Tailwind's lg breakpoint
+        return window.innerWidth < 1024; // Matches rg breakpoint
     }
 
     // Get all focusable elements inside the menu

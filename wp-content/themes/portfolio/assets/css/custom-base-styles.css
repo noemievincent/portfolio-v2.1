@@ -7,14 +7,14 @@ a {
 }
 
 .text-content {
-    @apply lg:text-lg flex flex-col gap-4 font-light;
+    @apply lg:text-lg flex flex-col gap-2.5 rg:gap-4 font-light;
 
     h2,
     h3,
     h4,
     h5,
     h6 {
-        @apply font-mono lg:text-2xl text-xl mt-6 mb-1 first:mt-0;
+        @apply font-mono text-xl rg:text-1.5xl rl:text-2xl mt-4 rg:mt-6 rg:mb-1 first:mt-0;
 
         + h2,
         + h3,
@@ -27,12 +27,12 @@ a {
 
     h3,
     h4 {
-        @apply mt-3 lg:text-2xl text-xl;
+        @apply mt-1.5 rg:mt-3;
     }
 
     h5,
     h6 {
-        @apply lg:text-xl text-lg font-medium;
+        @apply font-medium text-lg lg:text-xl;
     }
 
     strong {

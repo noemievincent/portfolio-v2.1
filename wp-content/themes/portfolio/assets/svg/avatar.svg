@@ -1,10 +1,11 @@
 <svg id="avatar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
     <defs>
-        <clipPath id="avatar_clippath">
-            <path fill="none" d="M200 400c110.5 0 200-89.5 200-200S310.5 0 200 0 0 89.5 0 200s89.5 200 200 200Z"/>
-        </clipPath>
+        <mask id="mask" x="0" y="0" width="400" height="487.1" maskUnits="userSpaceOnUse" style="mask-type:luminance">
+            <path fill="#FFF"
+                  d="M198.5,400c110.5,0,200-89.5,200-200S308.9,0,198.5,0-1.5,89.5-1.5,200s89.5,200,200,200Z"/>
+        </mask>
     </defs>
-    <g clip-path="url(#avatar_clippath)">
+    <g mask="url(#mask)">
         <g id="avatar">
             <g id="body">
                 <g id="neck">

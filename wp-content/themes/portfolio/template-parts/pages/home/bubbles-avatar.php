@@ -1,17 +1,12 @@
-<svg id="bubbles-avatar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 780">
+<svg id="bubbles-avatar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 780" class="fill-theme w-full h-full">
     <defs>
-        <clipPath id="avatar_clippath">
-            <path fill="none" d="M200 400c110.5 0 200-89.5 200-200S310.5 0 200 0 0 89.5 0 200s89.5 200 200 200Z"/>
-        </clipPath>
+        <mask id="avatar_mask" fill="#fff" x="0" y="0" width="400" height="488" maskUnits="userSpaceOnUse">
+            <path d="M200,400.7c110.5,0,200-89.7,200-200.4S310.5,0,200,0,0,89.7,0,200.4s89.5,200.4,200,200.4Z"/>
+        </mask>
     </defs>
-    <circle cx="190" cy="570" r="130"/>
-    <circle cx="420" cy="450" r="90"/>
-    <circle cx="498" cy="292" r="42"/>
-    <circle cx="410" cy="650" r="50"/>
-    <circle cx="315" cy="755" r="25"/>
     <g>
-        <path d="M200,0h0c110.5,0,200,89.5,200,200h0c0,110.5-89.5,200-200,200h0C89.5,400,0,310.5,0,200h0C0,89.5,89.5,0,200,0Z"/>
-        <g clip-path="url(#avatar_clippath)">
+        <path d="M200,0h0c110.5,0,200,89.7,200,200.4h0c0,110.7-89.5,200.4-200,200.4h0C89.5,400.7,0,311,0,200.4h0C0,89.7,89.5,0,200,0Z"/>
+        <g mask="url(#avatar_mask)">
             <g id="avatar">
                 <g id="av_body">
                     <g id="av_neck">
@@ -74,4 +69,9 @@
             </g>
         </g>
     </g>
+    <circle cx="191" cy="570" r="130"/>
+    <circle cx="421" cy="450" r="90"/>
+    <circle cx="499" cy="292" r="42"/>
+    <circle cx="411" cy="650" r="50"/>
+    <circle cx="316" cy="755" r="25"/>
 </svg>
