@@ -20,7 +20,7 @@ if ($projects->have_posts()) :
 
     <section id="<?= $section_id ?>" aria-labelledby="<?= $section_id ?>-title"
              class="page-section relative grid-default px-default bg-theme-lightest py-10 pb-28 rg:pb-36 lg:py-16 lg:pb-48 2xl:pb-80">
-        <div class="col-span-full lg:col-start-2 lg:col-span-10 2xl:col-start-3 2xl:col-span-8 flex flex-col gap-8 rg:gap-10 lg:gap-16">
+        <div class="col-span-full xl:col-start-2 xl:col-span-10 2xl:col-start-3 2xl:col-span-8 flex flex-col gap-8 rg:gap-10 lg:gap-16">
             <h2 id="<?= $section_id ?>-title"
                 class="relative z-1 font-mono text-center text-3xl lg:text-5xl w-fit mx-auto">
                 <span><?= $section_title ?></span>

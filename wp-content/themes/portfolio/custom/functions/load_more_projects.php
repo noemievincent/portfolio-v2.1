@@ -82,7 +82,7 @@ add_filter('previous_post_link', 'portfolio_custom_next_post_link', 10, 5);
 function portfolio_custom_html($post_id)
 {
     ob_start();
-    include get_template_directory() . '/template-parts/custom_next_post_link.php';
+    include get_template_directory() . '/template-parts/custom-next-post-link.php';
     return ob_get_clean();
 }
 

@@ -13,10 +13,10 @@ $color_palette = get_field('color_palette');
 
 <div id="single-page"
      class="relative z-3 grid-default px-default flex-grow py-16 pt-18 md:pb-2 lg:py-24 lg:pt-32 lg:pb-6 gap-y-6 lg:gap-y-8 grid-rows-[auto_1fr]">
-    <div class="col-span-full lg:col-start-2 lg:col-span-10 2xl:col-start-3 2xl:col-end-9">
+    <div class="col-span-full xl:col-start-2 xl:col-span-10 2xl:col-start-3 2xl:col-end-9">
         <?= get_template_part('template-parts/title-with-bubbles') ?>
     </div>
-    <div class="col-span-full rg:col-start-1 rg:col-span-4 rl:col-start-1 rl:col-span-6 lg:col-start-2 lg:col-span-5 2xl:col-start-3 2xl:col-span-4 flex flex-col gap-8 rg:gap-16 lg:gap-28">
+    <div class="col-span-full rg:col-start-1 rg:col-span-4 rl:col-start-1 rl:col-span-6 xl:col-start-2 xl:col-span-5 2xl:col-start-3 2xl:col-span-4 flex flex-col gap-8 rg:gap-16 lg:gap-28">
         <div class="flex flex-col gap-2 lg:gap-4">
             <?php if ($date) : ?>
                 <p class="flex items-center gap-2 text-lg font-light">
@@ -66,7 +66,7 @@ $color_palette = get_field('color_palette');
             <?php endif; ?>
         </div>
     </div>
-    <div class="col-span-full rg:col-end-9 rg:col-span-4 rl:col-end-13 rl:col-span-5 lg:col-end-12 lg:col-span-4 2xl:col-end-11 2xl:col-span-3 max-rg:mt-4 md:max-rg:mt-8 flex flex-col gap-8 rg:items-end justify-between">
+    <div class="col-span-full rg:col-end-9 rg:col-span-4 rl:col-end-13 rl:col-span-5 xl:col-end-12 xl:col-span-4 2xl:col-end-11 2xl:col-span-3 max-rg:mt-4 md:max-rg:mt-8 flex flex-col gap-8 rg:items-end justify-between">
         <?php if (!empty($color_palette)) : ?>
             <section aria-labelledby="palette" class="flex flex-col rg:items-end gap-6">
                 <h2 id="palette"

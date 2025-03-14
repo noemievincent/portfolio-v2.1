@@ -31,7 +31,7 @@ include get_theme_file_path() . '/inc/svg.php';
         class="flex-0 w-full z-40 text-lg rl:text-xl font-mono border-b-2 border-b-theme-dark top-0 <?= is_front_page() ? 'fixed' : 'sticky' ?>">
     <div id="sub-header"
          class="px-default grid-default bg-theme-dark text-black py-2 rg:py-3 ease-all relative z-30">
-        <div class="col-span-full lg:col-start-2 lg:col-span-10 2xl:col-start-3 2xl:col-span-8 flex justify-between">
+        <div class="col-span-full xl:col-start-2 xl:col-span-10 2xl:col-start-3 2xl:col-span-8 flex justify-between">
             <ul class="flex items-center gap-2.5 lg:gap-3.5">
                 <?php if ($github) : ?>
                     <li>
@@ -61,9 +61,9 @@ include get_theme_file_path() . '/inc/svg.php';
             <?php custom_language_switcher() ?>
         </div>
     </div>
-    <div id="main-header" class="px-default grid-default bg-white/90 relative py-3 rl:py-5 lg:py-8 ease-all">
+    <div id="main-header" class="px-default grid-default bg-white/90 relative py-3 rl:py-5 xl:py-8 ease-all">
         <input id="toggle-menu" tabindex="-1" class="toggle-menu rg:hidden absolute opacity-0 sr-only" type="checkbox">
-        <div class="burger-container col-span-full rg:col-start-1 rg:col-span-1 lg:col-start-2 lg:col-span-1 2xl:col-start-3 flex items-center justify-between relative z-30">
+        <div class="burger-container col-span-full rg:col-start-1 rg:col-span-1 xl:col-start-2 xl:col-span-1 2xl:col-start-3 flex items-center justify-between relative z-30">
             <a href="<?= home_url() ?>" class="w-fit h-fit inline-flex group">
                 <?php if (!empty($logos) && array_key_exists('logo', $logos)) : ?>
                     <img class="style-svg w-12 md:w-16 lg:w-18 aspect-square ease-all group-hover:fill-theme-dark group-focus:fill-theme-dark"
@@ -82,7 +82,7 @@ include get_theme_file_path() . '/inc/svg.php';
                 <span class="sr-only"><?= __('Ouvrir/fermer le menu', THEME_TEXT_DOMAIN) ?></span>
             </label>
         </div>
-        <div class="header-mobile rg:col-end-9 rg:col-span-6 rl:col-end-13 rl:col-span-9 lg:col-end-12 lg:col-span-8 2xl:col-end-11 2xl:col-span-6 max-rg:bg-white">
+        <div class="header-mobile rg:col-end-9 rg:col-span-6 rl:col-end-13 rl:col-span-9 xl:col-end-12 xl:col-span-8 2xl:col-end-11 2xl:col-span-6 max-rg:bg-white">
             <div class="flex max-rg:flex-col items-center justify-center rg:justify-between h-full gap-16">
                 <div role="navigation"
                      class="gap-16 max-rg:after:h-0.5 max-rg:after:w-20 max-rg:after:bg-black flex flex-col items-center">

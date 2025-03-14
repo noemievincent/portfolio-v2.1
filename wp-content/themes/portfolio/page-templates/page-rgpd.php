@@ -12,7 +12,7 @@ if ($is_policy) {
          class="grid-default px-default flex-grow py-10 pt-18 rl:py-16 rl:pt-24 lg:py-24 lg:pt-32">
         <?php if ($is_policy) : ?>
             <?php if ($rgpd_pages->have_posts()) : ?>
-                <div class="col-span-full rg:col-start-2 rg:col-span-6 rl:col-start-3 rl:col-span-8 lg:col-start-4 lg:col-span-6 2xl:col-start-5 2xl:col-span-4 flex flex-col gap-5 rl:gap-12 lg:gap-14">
+                <div class="col-span-full rg:col-start-2 rg:col-span-6 rl:col-start-3 rl:col-span-8 xl:col-start-4 xl:col-span-6 2xl:col-start-5 2xl:col-span-4 flex flex-col gap-5 rl:gap-12 lg:gap-14">
                     <?= get_template_part('template-parts/title-with-bubbles') ?>
                     <ul class="relative text-lg md:text-xl rg:text-2xl divide-theme-light flex flex-col items-center text-center divide-y">
                         <?php while ($rgpd_pages->have_posts()) : $rgpd_pages->the_post(); ?>
@@ -32,7 +32,7 @@ if ($is_policy) {
                 </div>
             <?php endif; ?>
         <?php else : ?>
-            <div class="col-span-full rg:col-start-2 rg:col-span-6 rl:col-start-3 rl:col-span-8 lg:col-start-4 lg:col-span-6 2xl:col-start-5 2xl:col-span-4 flex flex-col gap-8">
+            <div class="col-span-full rg:col-start-2 rg:col-span-6 rl:col-start-3 rl:col-span-8 xl:col-start-4 xl:col-span-6 2xl:col-start-5 2xl:col-span-4 flex flex-col gap-8">
                 <?= get_template_part('template-parts/title-with-bubbles') ?>
                 <div class="text-content">
                     <?php if ($content = get_the_content()) : ?>

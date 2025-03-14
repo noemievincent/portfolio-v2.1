@@ -1,11 +1,11 @@
 header {
   &.scrolled {
     #sub-header {
-      @apply py-1 rg:py-1.5
+      @apply py-1 rg:py-1.5;
     }
 
     #main-header {
-      @apply py-1 md:py-2 rl:py-4;
+      @apply py-1 md:py-2 rl:py-3 xl:py-4;
     }
   }
 
@@ -122,6 +122,7 @@ footer {
     @apply opacity-100 cursor-pointer;
 
     &:hover {
+      @apply bg-theme-dark;
       .animate {
         @apply max-w-[8em] opacity-100 mr-4.5;
       }
