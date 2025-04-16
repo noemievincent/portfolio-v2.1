@@ -8,7 +8,7 @@ if (!defined('ABSPATH'))
 
 // Main switch to get frontend assets from a Vite dev server OR from production built folder
 // it is recommended to move it into wp-config.php
-define('IS_VITE_DEVELOPMENT', true);
+define('IS_VITE_DEVELOPMENT', false);
 defined('THEME_TEXT_DOMAIN') or define('THEME_TEXT_DOMAIN', 'nv_portfolio');
 
 include "inc/inc.vite.php";
@@ -23,7 +23,7 @@ add_action('after_setup_theme', 'theme_core_setup');
 function theme_core_setup()
 {
     load_theme_textdomain(THEME_TEXT_DOMAIN, __DIR__ . '/languages');
-    
+
     add_theme_support('menus');
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');

@@ -42,7 +42,7 @@ class ProjectsLoader {
                 response = JSON.parse(response);
                 setTimeout(() => {
                     this.displayResults(response);
-                }, 600);
+                }, 0);
             },
             error: (xhr, status, error) => {
                 console.log('Error:', error);
