@@ -14,6 +14,8 @@ defined('THEME_TEXT_DOMAIN') or define('THEME_TEXT_DOMAIN', 'nv_portfolio');
 include "inc/inc.vite.php";
 include "inc/cpts.php";
 
+include "custom/functions/custom_email_templates.php";
+
 include "custom/functions/custom_submit_button.php";
 include "custom/functions/custom_language_switcher.php";
 include "custom/functions/load_more_projects.php";
