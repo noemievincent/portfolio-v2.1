@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Portfolio\n"
-"POT-Creation-Date: 2025-03-13 19:39+0100\n"
-"PO-Revision-Date: 2025-03-13 19:39+0100\n"
+"POT-Creation-Date: 2025-04-17 11:51+0200\n"
+"PO-Revision-Date: 2025-04-17 11:51+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_BE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.6\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -28,29 +28,70 @@ msgstr "Oups !"
 msgid "Cette page n'a pas pu être trouvée."
 msgstr "Cette page n'a pas pu être trouvée."
 
-#: 404.php:18 header.php:69
+#: 404.php:18 header.php:72
 msgid "Retourner à l'accueil"
 msgstr "Retourner à l'accueil"
 
-#: footer.php:5
-msgid "Pied de page"
-msgstr "Pied de page"
+#: emails/templates/automatic_response.php:22 emails/templates/default.php:22
+msgid "Noémie Vincent"
+msgstr "Noémie Vincent"
 
-#: footer.php:8
+#: emails/templates/automatic_response.php:29
+msgid "Merci pour votre message !"
+msgstr "Merci pour votre message !"
+
+#: emails/templates/automatic_response.php:30
+msgid "Je l’ai bien reçu et je vous répondrai dans les plus brefs délais."
+msgstr "Je l’ai bien reçu et je vous répondrai dans les plus brefs délais."
+
+#: emails/templates/automatic_response.php:34
+msgid "Voici un résumé de votre envoi :"
+msgstr "Voici un résumé de votre envoi :"
+
+#: emails/templates/automatic_response.php:37 emails/templates/default.php:37
+msgid "Nom :"
+msgstr "Nom :"
+
+#: emails/templates/automatic_response.php:41 emails/templates/default.php:41
+msgid "Adresse e-mail :"
+msgstr "Adresse e-mail :"
+
+#: emails/templates/automatic_response.php:45 emails/templates/default.php:45
+msgid "Message :"
+msgstr "Message :"
+
+#: emails/templates/automatic_response.php:54 emails/templates/default.php:54
+#: footer.php:15
 msgid "Noémie Vincent. Tous droits réservés."
 msgstr "Noémie Vincent. Tous droits réservés."
 
-#: header.php:37 header.php:41 template-parts/pages/home/contact.php:61
+#: emails/templates/default.php:30
+msgid "Nouvelle soumission via le formulaire de contact"
+msgstr "Nouvelle soumission via le formulaire de contact"
+
+#: emails/templates/default.php:34
+msgid "Voici un résumé des données envoyées :"
+msgstr "Voici un résumé des données envoyées :"
+
+#: footer.php:6
+msgid "Retour en haut"
+msgstr "Retour en haut"
+
+#: footer.php:12 template-parts/skiplinks.php:11
+msgid "Pied de page"
+msgstr "Pied de page"
+
+#: header.php:40 header.php:44 template-parts/pages/home/contact.php:61
 #: template-parts/pages/home/contact.php:65
 msgid "Visiter mon profil GitHub"
 msgstr "Visiter mon profil GitHub"
 
-#: header.php:49 header.php:53 template-parts/pages/home/contact.php:74
+#: header.php:52 header.php:56 template-parts/pages/home/contact.php:74
 #: template-parts/pages/home/contact.php:78
 msgid "Visiter ma page Linkedin"
 msgstr "Visiter ma page Linkedin"
 
-#: header.php:79
+#: header.php:82
 msgid "Ouvrir/fermer le menu"
 msgstr "Ouvrir/fermer le menu"
 
@@ -63,42 +104,34 @@ msgid "Projets"
 msgstr "Projets"
 
 #: inc/cpts.php:20
-#| msgid "Ajouter un terme"
 msgid "Ajouter un projet"
 msgstr "Ajouter un projet"
 
 #: inc/cpts.php:21
-#| msgid "Ajouter un nouveau service"
 msgid "Ajouter un nouveau projet"
 msgstr "Ajouter un nouveau projet"
 
 #: inc/cpts.php:22
-#| msgid "Nouveau terme"
 msgid "Nouveau projet"
 msgstr "Nouveau projet"
 
 #: inc/cpts.php:23
-#| msgid "Modifier le service"
 msgid "Modifier le projet"
 msgstr "Modifier le projet"
 
 #: inc/cpts.php:24
-#| msgid "Voir le terme"
 msgid "Voir le projet"
 msgstr "Voir le projet"
 
 #: inc/cpts.php:25
-#| msgid "Rechercher des services"
 msgid "Rechercher un projet"
 msgstr "Rechercher un projet"
 
 #: inc/cpts.php:26
-#| msgid "Aucun service trouvé."
 msgid "Aucun projet trouvé"
 msgstr "Aucun projet trouvé"
 
 #: inc/cpts.php:27
-#| msgid "Tous les termes"
 msgid "Tous les projets"
 msgstr "Tous les projets"
 
@@ -183,6 +216,10 @@ msgstr "Contenu à venir"
 msgid "En savoir plus sur ce projet"
 msgstr "En savoir plus sur ce projet"
 
+#: template-parts/custom-next-post-link.php:3
+msgid "Projet suivant"
+msgstr "Projet suivant"
+
 #: template-parts/custom-theme-switcher.php:8
 msgid "Changer le thème en rose"
 msgstr "Changer le thème en rose"
@@ -195,20 +232,15 @@ msgstr "Changer le thème en vert"
 msgid "Changer le thème en bleu"
 msgstr "Changer le thème en bleu"
 
-#: template-parts/custom_next_post_link.php:3
-msgid "Projet suivant"
-msgstr "Projet suivant"
-
 #: template-parts/pages/home/projects.php:35
 msgid "Chargement..."
 msgstr "Chargement..."
 
-#: template-parts/pages/single-project/gallery.php:11
+#: template-parts/pages/single-project/gallery.php:13
 msgid "Galerie d'images"
 msgstr "Galerie d'images"
 
 #: template-parts/pages/single-project/introduction.php:41
-#| msgid "Voir le service"
 msgid "Voir le site"
 msgstr "Voir le site"
 
@@ -223,6 +255,19 @@ msgstr "GitHub"
 #: template-parts/pages/single-project/introduction.php:73
 msgid "Palette de couleurs"
 msgstr "Palette de couleurs"
+
+#: template-parts/skiplinks.php:1
+msgid "Accès rapide"
+msgstr "Accès rapide"
+
+#: template-parts/skiplinks.php:5
+#| msgid "Contenu à venir"
+msgid "Contenu"
+msgstr "Contenu"
+
+#: template-parts/skiplinks.php:8
+msgid "Menu"
+msgstr "Menu"
 
 #~ msgid "Service"
 #~ msgstr "Service"
